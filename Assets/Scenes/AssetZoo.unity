@@ -31508,6 +31508,8 @@ MonoBehaviour:
   airMultiplier: 0.4
   walkSpeed: 0
   sprintSpeed: 0
+  fallMultiplier: 2.5
+  lowJumpMultiplier: 2
   playerHeight: 2
   whatIsGround:
     serializedVersion: 2
@@ -31519,6 +31521,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   groundCheckDistance: 0.1
+  maxFallHeight: 10
 --- !u!4 &1019031884 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6078883724945204202, guid: b7e8faffd16949eaa88a0ef340486f5d, type: 3}
