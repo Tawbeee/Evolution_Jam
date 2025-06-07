@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3161908922",
+    "Type": "User",
+    "GUID": "{317DE79A-0B50-4D6F-8CBA-A033D1654BD5}",
+    "Language": "SFX",
+    "Hash": "{DBCFDA97-E52C-4A7D-09FB-1D2FFE533361}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
+    "ShortName": "Main",
+    "Path": "Main.bnk",
+    "Media": [
+     {
+      "Id": "886436606",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "KillingObject_Fire.wav",
+      "CachePath": "06/{069E1DE3-E8DD-817B-0CD1-C384150448CF}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3990733286",
+      "Name": "Play_KillingObject_Fire",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_KillingObject_Fire",
+      "GUID": "{0CD558FA-29CA-4EF9-88A2-C7A94B46E3F9}",
+      "MaxAttenuation": "50",
+      "DurationType": "OneShot",
+      "DurationMin": "14.186812",
+      "DurationMax": "14.186812",
+      "MediaRefs": [
+       {
+        "Id": "886436606"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{B6FA46A2-76D0-381B-2581-D3D33C48A05F}"
+ }
+}
