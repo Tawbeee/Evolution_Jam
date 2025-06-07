@@ -6,12 +6,14 @@ public class PlayerInteraction : MonoBehaviour
 {
     [SerializeField] private TMPro.TextMeshProUGUI coinText;
     private int numberOfCoins = 0;
-    [SerializeField] private int TotalCoins;
+    [SerializeField] private int totalCoins;
+    [SerializeField] private Transform coinsParent;
 
     private void Start()
     {
+        totalCoins = coinsParent.childCount;
         // Initialize the coin text at the start of the game
-        coinText.text = "Coins : " + numberOfCoins.ToString() + "/" + TotalCoins.ToString();
+        coinText.text = "Coins : " + numberOfCoins.ToString() + "/" + totalCoins.ToString();
     }
     public void OnTriggerEnter(Collider other)
     {
@@ -19,9 +21,9 @@ public class PlayerInteraction : MonoBehaviour
         {
             
             numberOfCoins++;
-            coinText.text = "Coins : " + numberOfCoins.ToString() + "/" + TotalCoins.ToString();
+            coinText.text = "Coins : " + numberOfCoins.ToString() + "/" + totalCoins.ToString();
             Destroy(other.gameObject);
-            if (numberOfCoins >= TotalCoins)
+            if (numberOfCoins >= totalCoins)
             {
                 // Load the next level or show a victory message
                 Debug.Log("All coins collected! Level complete!");

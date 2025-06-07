@@ -33,7 +33,6 @@ public class PlayerState : MonoBehaviour
     {
         playerState = type; 
         this.transform.position = SpawnPoint.position;
-
     }
 
 }

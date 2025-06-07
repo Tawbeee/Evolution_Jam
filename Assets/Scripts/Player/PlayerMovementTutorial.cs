@@ -53,11 +53,23 @@ public class PlayerMovementTutorial : MonoBehaviour
         readyToJump = true;
     }
 
+    // Réglages (assignés dans l’inspecteur ou calculés)
+    [SerializeField] private CapsuleCollider capsuleCollider;
+    [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private float groundCheckDistance = 0.1f;
+
+    private bool IsGrounded()
+    {
+        Vector3 point1 = transform.position + capsuleCollider.center + Vector3.up * (capsuleCollider.height / 2 - capsuleCollider.radius);
+        Vector3 point2 = transform.position + capsuleCollider.center - Vector3.up * (capsuleCollider.height / 2 - capsuleCollider.radius);
+
+        return Physics.CapsuleCast(point1, point2, capsuleCollider.radius * 0.95f, Vector3.down, out RaycastHit hit, groundCheckDistance, groundLayer);
+    }
+
     private void Update()
     {
         // Ground check
-        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.3f, whatIsGround);
-
+        grounded = IsGrounded();
         MyInput();
         SpeedControl();
 
