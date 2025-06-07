@@ -30,13 +30,6 @@ public class StompKillingObject : KillingObject
     {
         if (hasStomped) return;
 
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            hasStomped = true;
-            rb.isKinematic = true;
-
-            Invoke(nameof(ResetStomp), resetDelay);
-        }
 
         // Gère le kill aussi via la collision (en plus du trigger)
         if (collision.gameObject.CompareTag("Player"))
@@ -47,21 +40,21 @@ public class StompKillingObject : KillingObject
 
     private void ResetStomp()
     {
-        Debug.Log("ResetStomp appelé !");
+        
         rb.isKinematic = true;
         StartCoroutine(RiseBackUp());
     }
 
     private System.Collections.IEnumerator RiseBackUp()
     {
-        Debug.Log("Début de la montée");
+        
         while (Vector3.Distance(transform.position, initialPosition) > 0.1f)
         {
             transform.position = Vector3.MoveTowards(transform.position, initialPosition, riseSpeed * Time.deltaTime);
             yield return null;
         }
 
-        Debug.Log("Montée terminée");
+        
         hasStomped = false;
         Invoke(nameof(StartStomp), stompDelay);
     }
