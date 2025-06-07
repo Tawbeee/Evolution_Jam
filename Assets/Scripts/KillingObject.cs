@@ -26,6 +26,7 @@ public class KillingObject : MonoBehaviour
         }
     }
 
+
     private void Update()
     {
         if (PlayerState.Instance.playerState == killingObjectType)

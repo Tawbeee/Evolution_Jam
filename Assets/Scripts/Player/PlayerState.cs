@@ -7,6 +7,10 @@ public class PlayerState : MonoBehaviour
     [SerializeField] public KillingObjectType playerState;
     [SerializeField] private KillingObjectType startState;
 
+    private bool movementIsArrow = false;
+    [SerializeField] private PlayerMovementTutorial playerMovementScript;
+    [SerializeField] private PlayerArrowMovement arrowMovementScript;
+
 
     void Awake()
     {
@@ -31,8 +35,29 @@ public class PlayerState : MonoBehaviour
 
     private void OnPlayerKilled(KillingObjectType type)
     {
+        if (playerState == KillingObjectType.Arrow)
+        {
+            SwitchMovement();
+        }
         playerState = type; 
+        
         this.transform.position = SpawnPoint.position;
+        
+    }
+
+    public void SwitchMovement()
+    {
+        movementIsArrow = !movementIsArrow;
+        ApplyMovementType();
+    }
+
+    private void ApplyMovementType()
+    {
+        if (arrowMovementScript != null)
+            arrowMovementScript.enabled = movementIsArrow;
+
+        if (playerMovementScript != null)
+            playerMovementScript.enabled = !movementIsArrow;
     }
 
 }
