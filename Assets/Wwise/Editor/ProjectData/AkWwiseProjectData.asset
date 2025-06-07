@@ -110,9 +110,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: fa58d50cca29f94e88a2c7a94b46e3f9
       Path: Events\Default Work Unit\Play_KillingObject_Fire
-      maxAttenuation: 50
-      maxDuration: 14.186812
-      minDuration: 14.186812
+      maxAttenuation: 35
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:

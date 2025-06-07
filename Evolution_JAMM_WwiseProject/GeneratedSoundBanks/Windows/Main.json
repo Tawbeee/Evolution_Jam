@@ -10,30 +10,48 @@
     "Type": "User",
     "GUID": "{317DE79A-0B50-4D6F-8CBA-A033D1654BD5}",
     "Language": "SFX",
-    "Hash": "{DBCFDA97-E52C-4A7D-09FB-1D2FFE533361}",
+    "Hash": "{78D7649F-3E17-EB2D-E1C7-3525DFC5F77B}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
     "Media": [
+     {
+      "Id": "243561499",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Jam_Evolution.wav",
+      "CachePath": "B6/{B660EDAC-5576-6BA8-CB9D-CF8C30E4C6C7}.wem"
+     },
      {
       "Id": "886436606",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "KillingObject_Fire.wav",
-      "CachePath": "06/{069E1DE3-E8DD-817B-0CD1-C384150448CF}.wem"
+      "CachePath": "C9/{C9E81E54-3C78-C2E5-AB07-FD57CF2FA2E3}.wem"
      }
     ],
     "Events": [
+     {
+      "Id": "3075399896",
+      "Name": "Play_Jam_Evolution",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Jam_Evolution",
+      "GUID": "{79C44D13-9909-4CF5-BDB1-4DA772AEBA84}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "243561499"
+       }
+      ]
+     },
      {
       "Id": "3990733286",
       "Name": "Play_KillingObject_Fire",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_KillingObject_Fire",
       "GUID": "{0CD558FA-29CA-4EF9-88A2-C7A94B46E3F9}",
-      "MaxAttenuation": "50",
-      "DurationType": "OneShot",
-      "DurationMin": "14.186812",
-      "DurationMax": "14.186812",
+      "MaxAttenuation": "35",
+      "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "886436606"
@@ -43,6 +61,6 @@
     ]
    }
   ],
-  "FileHash": "{B6FA46A2-76D0-381B-2581-D3D33C48A05F}"
+  "FileHash": "{E6D2F45F-B48D-E39A-3F99-B9992983E8BE}"
  }
 }
