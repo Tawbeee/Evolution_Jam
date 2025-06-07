@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class PlayerState : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class PlayerState : MonoBehaviour
     [SerializeField] private PlayerMovementTutorial playerMovementScript;
     [SerializeField] private PlayerArrowMovement arrowMovementScript;
 
+  
 
     void Awake()
     {
@@ -33,16 +35,55 @@ public class PlayerState : MonoBehaviour
         PlayerEvents.OnKilled -= OnPlayerKilled;
     }
 
+    private Coroutine poisonCoroutine;
+
+
+    private void HandlePoisonEffect()
+    {
+        // Si on est en poison, on lance la coroutine de mort
+        if (playerState == KillingObjectType.Poison)
+        {
+            // Si déjà en train de compter, on arrête pour redémarrer le timer
+            if (poisonCoroutine != null)
+                StopCoroutine(poisonCoroutine);
+
+            poisonCoroutine = StartCoroutine(PoisonKillAfterDelay(30f));
+        }
+        else
+        {
+            // Si on n'est plus en poison, on annule la coroutine
+            if (poisonCoroutine != null)
+            {
+                StopCoroutine(poisonCoroutine);
+                poisonCoroutine = null;
+            }
+        }
+    }
+
+    private IEnumerator PoisonKillAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        // Vérifier que le joueur est toujours en poison au moment de la mort
+        if (playerState == KillingObjectType.Poison)
+        {
+            PlayerEvents.Kill(KillingObjectType.Poison);
+        }
+    }
+
+    // Modifie ta méthode OnPlayerKilled pour appeler HandlePoisonEffect après changement d'état
     private void OnPlayerKilled(KillingObjectType type)
     {
         if (playerState == KillingObjectType.Arrow)
         {
             SwitchMovement();
         }
-        playerState = type; 
-        
+        playerState = type;
+
         this.transform.position = SpawnPoint.position;
-        
+        HandlePoisonEffect();
+
+
     }
 
     public void SwitchMovement()
@@ -59,5 +100,10 @@ public class PlayerState : MonoBehaviour
         if (playerMovementScript != null)
             playerMovementScript.enabled = !movementIsArrow;
     }
+
+    
+
+
+
 
 }

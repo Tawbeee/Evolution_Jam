@@ -5,11 +5,11 @@ using UnityEngine;
 public class KillingObject : MonoBehaviour
 {
     [SerializeField] public KillingObjectType killingObjectType;
-    private Collider Collider;
+    protected Collider objectCollider;
 
-    private void Start()
+    public virtual void Start()
     {
-        Collider = GetComponent<Collider>();
+        objectCollider = GetComponent<Collider>();
     }
 
 
@@ -27,17 +27,7 @@ public class KillingObject : MonoBehaviour
     }
 
 
-    private void Update()
-    {
-        if (PlayerState.Instance.playerState == killingObjectType)
-        {
-            Collider.isTrigger = false;
-        }
-        else
-        {
-            Collider.isTrigger = true;
-        }
-    }
+    
 }
 
 
@@ -53,4 +43,5 @@ public enum KillingObjectType
     Arrow,
     Electricity,
     Freeze,
+    Stomp,
 }

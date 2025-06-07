@@ -13,6 +13,8 @@ public class PlayerArrowMovement : MonoBehaviour
     private InputAction turnAction;
     private float turnInput;
 
+    private float initialY;
+
     private void Awake()
     {
         if (playerInput == null)
@@ -21,20 +23,33 @@ public class PlayerArrowMovement : MonoBehaviour
         turnAction = playerInput.actions["Turn"];
     }
 
+    private void Start()
+    {
+        // Enregistre la position Y de départ
+        initialY = transform.position.y;
+    }
+
     private void FixedUpdate()
     {
         HandleMovement();
+        EnforceMinY();
     }
 
     private void HandleMovement()
     {
-        // Lire l'entrée de rotation
         turnInput = turnAction.ReadValue<float>();
 
-        // Rotation uniquement autour de l'axe Y (lacets)
         transform.Rotate(Vector3.up * turnInput * turnSpeed * Time.fixedDeltaTime, Space.Self);
-
-        // Avance constante dans la direction que pointe la flèche
         transform.position += transform.forward * moveSpeed * Time.fixedDeltaTime;
+    }
+
+    private void EnforceMinY()
+    {
+        Vector3 pos = transform.position;
+        if (pos.y < initialY)
+        {
+            pos.y = initialY;
+            transform.position = pos;
+        }
     }
 }

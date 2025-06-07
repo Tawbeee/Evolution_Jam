@@ -7,7 +7,6 @@ public class PlayerMovementTutorial : MonoBehaviour
 {
     [Header("Movement")]
     public float moveSpeed;
-
     public float groundDrag;
 
     public float jumpForce;
@@ -17,6 +16,10 @@ public class PlayerMovementTutorial : MonoBehaviour
 
     [HideInInspector] public float walkSpeed;
     [HideInInspector] public float sprintSpeed;
+
+    [Header("Gravity")]
+    public float fallMultiplier = 2.5f;
+    public float lowJumpMultiplier = 2f;
 
     [Header("Ground Check")]
     public float playerHeight;
@@ -30,17 +33,22 @@ public class PlayerMovementTutorial : MonoBehaviour
 
     Rigidbody rb;
 
-    // Nouveau syst�me d�input
-    
-
     private InputAction moveAction;
     private InputAction jumpAction;
 
     public PlayerInput playerInput;
 
+    [SerializeField] private CapsuleCollider capsuleCollider;
+    [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private float groundCheckDistance = 0.1f;
+
+    [SerializeField] private float maxFallHeight = 10f; // hauteur maximale tolérée
+    private float lastGroundY;
+    private bool isFalling;
+
+
     private void Awake()
     {
-        
         moveAction = playerInput.actions["Move"];
         jumpAction = playerInput.actions["Jump"];
     }
@@ -49,32 +57,52 @@ public class PlayerMovementTutorial : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
-
         readyToJump = true;
-    }
-
-    // Réglages (assignés dans l’inspecteur ou calculés)
-    [SerializeField] private CapsuleCollider capsuleCollider;
-    [SerializeField] private LayerMask groundLayer;
-    [SerializeField] private float groundCheckDistance = 0.1f;
-
-    private bool IsGrounded()
-    {
-        Vector3 point1 = transform.position + capsuleCollider.center + Vector3.up * (capsuleCollider.height / 2 - capsuleCollider.radius);
-        Vector3 point2 = transform.position + capsuleCollider.center - Vector3.up * (capsuleCollider.height / 2 - capsuleCollider.radius);
-
-        return Physics.CapsuleCast(point1, point2, capsuleCollider.radius * 0.95f, Vector3.down, out RaycastHit hit, groundCheckDistance, groundLayer);
     }
 
     private void Update()
     {
-        // Ground check
         grounded = IsGrounded();
         MyInput();
         SpeedControl();
 
         // Handle drag
         rb.linearDamping = grounded ? groundDrag : 0;
+
+        // Appliquer un boost de gravité quand on tombe
+        if (rb.linearVelocity.y < 0)
+        {
+            rb.AddForce(Vector3.up * Physics.gravity.y * (fallMultiplier - 1), ForceMode.Acceleration);
+        }
+        // Raccourcir le saut si on relâche le bouton avant le sommet
+        else if (rb.linearVelocity.y > 0 && !jumpAction.IsPressed())
+        {
+            rb.AddForce(Vector3.up * Physics.gravity.y * (lowJumpMultiplier - 1), ForceMode.Acceleration);
+        }
+
+        if (IsGrounded())
+        {
+            if (isFalling)
+            {
+                float fallDistance = lastGroundY - transform.position.y;
+                if (fallDistance > maxFallHeight)
+                {
+                    PlayerEvents.Kill(KillingObjectType.Fall);
+                }
+            }
+
+            // Réinitialiser la hauteur du sol quand on est au sol
+            lastGroundY = transform.position.y;
+            isFalling = false;
+        }
+        else
+        {
+            if (!isFalling)
+            {
+                lastGroundY = transform.position.y;
+                isFalling = true;
+            }
+        }
     }
 
     private void FixedUpdate()
@@ -86,7 +114,6 @@ public class PlayerMovementTutorial : MonoBehaviour
     {
         moveInput = moveAction.ReadValue<Vector2>();
 
-        // Jump
         if (jumpAction.triggered && readyToJump && grounded)
         {
             readyToJump = false;
@@ -118,6 +145,7 @@ public class PlayerMovementTutorial : MonoBehaviour
 
     private void Jump()
     {
+        
         rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
         rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
     }
@@ -125,5 +153,13 @@ public class PlayerMovementTutorial : MonoBehaviour
     private void ResetJump()
     {
         readyToJump = true;
+    }
+
+    private bool IsGrounded()
+    {
+        Vector3 point1 = transform.position + capsuleCollider.center + Vector3.up * (capsuleCollider.height / 2 - capsuleCollider.radius);
+        Vector3 point2 = transform.position + capsuleCollider.center - Vector3.up * (capsuleCollider.height / 2 - capsuleCollider.radius);
+
+        return Physics.CapsuleCast(point1, point2, capsuleCollider.radius * 0.95f, Vector3.down, out RaycastHit hit, groundCheckDistance, groundLayer);
     }
 }
