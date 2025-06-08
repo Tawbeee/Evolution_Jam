@@ -149,67 +149,12 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_PlayerState_Arrow" ID="{3280864D-9FC3-49F2-940B-158FE7017061}">
-					<ChildrenList>
-						<Action Name="" ID="{AD0E65C9-778A-4405-B64F-E1611B8BB21C}" ShortID="517080347">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="PlayerState_Arrow" ID="{2E7212AF-73BA-47C5-A53F-37278B29F975}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_PlayerState_Fire" ID="{4084E0C4-FEF1-4323-B1D7-160B9AA82A0D}">
-					<ChildrenList>
-						<Action Name="" ID="{DCCB862C-BB74-46B3-8E48-3FF5D3257AEF}" ShortID="154871352">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="PlayerState_Fire" ID="{84934286-473E-4F92-870E-A9D352068B71}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_PlayerState_Gravity" ID="{E56A7869-B9B0-4343-89FD-ADD130A9A996}">
-					<ChildrenList>
-						<Action Name="" ID="{D84C4614-46B4-41ED-AE8F-3CE0AB46194A}" ShortID="665187784">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="PlayerState_Gravity" ID="{78F927AC-3C93-44BF-9ABA-16069A467B40}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_PlayerState_Lightning" ID="{503D42E9-9576-4D46-AD86-96A748E5AAEE}">
-					<ChildrenList>
-						<Action Name="" ID="{0906CA30-FA38-4915-85A8-53FC5502D57B}" ShortID="677349904">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="PlayerState_Lightning" ID="{44FB9B37-2561-4F9A-BD9B-1388523C5FEF}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_PlayerState_Lightning_ActivateButton" ID="{6E0BAAED-B1B4-4956-91CB-C57478DAA9DA}">
 					<ChildrenList>
 						<Action Name="" ID="{5BD9B37D-35F5-4743-80C1-3D5821E9D1EC}" ShortID="587351985">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="PlayerState_Lightning_ActivateButton" ID="{CB40E0A6-2ADE-45E1-B648-B2F5540B49CA}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_PlayerState_Poison" ID="{C6500379-9435-4C6E-B593-99EE5AAE0BF1}">
-					<ChildrenList>
-						<Action Name="" ID="{ABAD5778-7F9A-4204-A038-F0E731AE0E00}" ShortID="784792598">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="PlayerState_Poison" ID="{65A020A6-E5A4-4A67-BC39-E467D9AEB8C5}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -226,9 +171,51 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_PlayerState_Water" ID="{ED4E9AD2-C214-42E2-80F0-73E2F29777E4}">
+				<Event Name="Play_PlayerState" ID="{CDE177E7-0214-4FCD-9AF9-25FB19FF0323}">
 					<ChildrenList>
-						<Action Name="" ID="{C7A695A8-8FFF-4356-8D4C-E6F10477A213}" ShortID="757273152">
+						<Action Name="" ID="{25FDB362-305F-4CC1-9176-043F31F40C7D}" ShortID="357972790">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlayerState_Arrow" ID="{2E7212AF-73BA-47C5-A53F-37278B29F975}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{70583C7B-C1B9-4AE0-BD7B-A2293562B2C1}" ShortID="379177120">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlayerState_Fire" ID="{84934286-473E-4F92-870E-A9D352068B71}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{AB78EDBB-26F8-40D8-A665-C72A5B0A37D7}" ShortID="977712805">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlayerState_Gravity" ID="{78F927AC-3C93-44BF-9ABA-16069A467B40}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{82D63A04-02A6-4E41-B996-F706C72C5B22}" ShortID="719408169">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlayerState_Lightning" ID="{44FB9B37-2561-4F9A-BD9B-1388523C5FEF}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{B29F5CC7-FB5A-4AAF-AC88-56945A772AA0}" ShortID="11321902">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlayerState_Poison" ID="{65A020A6-E5A4-4A67-BC39-E467D9AEB8C5}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{76813E8B-F3B9-4052-B5FB-4CBBCE562795}" ShortID="129986879">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlayerState_Spike" ID="{EA17124F-496C-4FC1-988D-C36D8637BAF6}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C1AE1C53-DD18-462A-BE1A-0B47347A6D67}" ShortID="521735221">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="PlayerState_Water" ID="{B7EC958F-D006-4C5B-A4D3-D4B94794D28C}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>

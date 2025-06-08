@@ -14,6 +14,7 @@
 						<ObjectRef Name="Play_IsKilled" ID="{51514CBF-05AE-4667-9FFE-3E0A82983F96}" WorkUnitID="{BA08F2A5-DF67-4E29-9B47-F79396BB1985}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_IsKilledBy_Lightning" ID="{270D6673-1532-47CF-9F15-0FFB4F2969D6}" WorkUnitID="{BA08F2A5-DF67-4E29-9B47-F79396BB1985}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_IsKilledBy_Spike" ID="{039B3D17-F1DD-4854-9405-15258F2AB701}" WorkUnitID="{BA08F2A5-DF67-4E29-9B47-F79396BB1985}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_PlayerState_Spike" ID="{5B2D2C8D-B2AD-485F-A0C3-AB4033D09A72}" WorkUnitID="{BA08F2A5-DF67-4E29-9B47-F79396BB1985}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_KillingObject_LightningStorm" ID="{734DF9B6-1EC0-4877-B521-7D3290D78568}" WorkUnitID="{BA08F2A5-DF67-4E29-9B47-F79396BB1985}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_PlayerState_Lightning_ActivateButton" ID="{6E0BAAED-B1B4-4956-91CB-C57478DAA9DA}" WorkUnitID="{BA08F2A5-DF67-4E29-9B47-F79396BB1985}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_PlayerState_Arrow" ID="{3280864D-9FC3-49F2-940B-158FE7017061}" WorkUnitID="{BA08F2A5-DF67-4E29-9B47-F79396BB1985}" Origin="Manual" Filter="7"/>

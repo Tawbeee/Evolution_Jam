@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{317DE79A-0B50-4D6F-8CBA-A033D1654BD5}",
     "Language": "SFX",
-    "Hash": "{587D0545-E6FD-11D2-5EBE-8189404762FB}",
+    "Hash": "{62C9E1B0-4967-FAEA-E20B-B22B0E68748E}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -29,7 +29,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PlayerState_Lightning.wav",
-      "CachePath": "3A/{3A25BFCC-F4DF-EA69-7D0D-AA719B254C97}.wem"
+      "CachePath": "4F/{4F791CE1-E6CB-0977-112B-892D6AD12959}.wem"
      },
      {
       "Id": "87990099",
@@ -37,7 +37,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PlayerState_Poison.wav",
-      "CachePath": "69/{69DD8752-EBEC-0D50-8912-FBC9005FB1D1}.wem"
+      "CachePath": "27/{27C3CB73-0B32-60D3-CCA5-B6E18AB74B1D}.wem"
      },
      {
       "Id": "102579968",
@@ -45,7 +45,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PlayerState_Fire.wav",
-      "CachePath": "70/{7069C97A-2C2D-3BAC-0A26-86B91A5E155D}.wem"
+      "CachePath": "D8/{D8381355-028C-1B0E-1B20-239A61FAE313}.wem"
      },
      {
       "Id": "155598266",
@@ -53,7 +53,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PlayerState_Water.wav",
-      "CachePath": "FF/{FF6F1DC9-0E45-589A-41E1-9D140F0E8C77}.wem"
+      "CachePath": "83/{83F20AEF-3109-AC49-EB45-90840676D2A9}.wem"
      },
      {
       "Id": "163078192",
@@ -117,7 +117,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PlayerState_Gravity.wav",
-      "CachePath": "73/{73A47F2F-4C0C-4816-1269-5166906720B6}.wem"
+      "CachePath": "4C/{4C54EFD9-D46A-7CE5-58F0-1B4089A48351}.wem"
      },
      {
       "Id": "594596475",
@@ -133,7 +133,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PlayerState_Arrow.wav",
-      "CachePath": "29/{29FEE934-CAE5-1C28-1592-66507BDDBFDB}.wem"
+      "CachePath": "80/{804DE2CF-DC03-3014-8F4B-0E8E54805E67}.wem"
      },
      {
       "Id": "735792565",
@@ -142,6 +142,14 @@
       "Location": "Memory",
       "ShortName": "IsKilledBy_Water.wav",
       "CachePath": "D5/{D528A846-365B-9E82-3CC5-38FA5EC28545}.wem"
+     },
+     {
+      "Id": "737506337",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PlayerState_Spike.wav",
+      "CachePath": "D7/{D7792E10-6706-D802-BF9D-340951717A4D}.wem"
      },
      {
       "Id": "871730715",
@@ -343,58 +351,32 @@
       ]
      },
      {
-      "Id": "3553365610",
-      "Name": "Play_PlayerState_Arrow",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_PlayerState_Arrow",
-      "GUID": "{3280864D-9FC3-49F2-940B-158FE7017061}",
-      "DurationType": "OneShot",
-      "DurationMin": "6.5934167",
-      "DurationMax": "6.5934167",
-      "MediaRefs": [
-       {
-        "Id": "670059735"
-       }
-      ]
-     },
-     {
-      "Id": "2923772123",
-      "Name": "Play_PlayerState_Fire",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_PlayerState_Fire",
-      "GUID": "{4084E0C4-FEF1-4323-B1D7-160B9AA82A0D}",
-      "DurationType": "OneShot",
-      "DurationMin": "20.522062",
-      "DurationMax": "20.522062",
-      "MediaRefs": [
-       {
-        "Id": "102579968"
-       }
-      ]
-     },
-     {
-      "Id": "2709068703",
-      "Name": "Play_PlayerState_Gravity",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_PlayerState_Gravity",
-      "GUID": "{E56A7869-B9B0-4343-89FD-ADD130A9A996}",
-      "DurationType": "OneShot",
-      "DurationMin": "21.098896",
-      "DurationMax": "21.098896",
-      "MediaRefs": [
-       {
-        "Id": "407112751"
-       }
-      ]
-     },
-     {
-      "Id": "1056671487",
-      "Name": "Play_PlayerState_Lightning",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_PlayerState_Lightning",
-      "GUID": "{503D42E9-9576-4D46-AD86-96A748E5AAEE}",
-      "DurationType": "OneShot",
-      "DurationMin": "19.285707",
-      "DurationMax": "19.285707",
+      "Id": "1513779728",
+      "Name": "Play_PlayerState",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_PlayerState",
+      "GUID": "{CDE177E7-0214-4FCD-9AF9-25FB19FF0323}",
+      "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "57506197"
+       },
+       {
+        "Id": "87990099"
+       },
+       {
+        "Id": "102579968"
+       },
+       {
+        "Id": "155598266"
+       },
+       {
+        "Id": "407112751"
+       },
+       {
+        "Id": "670059735"
+       },
+       {
+        "Id": "737506337"
        }
       ]
      },
@@ -413,20 +395,6 @@
       ]
      },
      {
-      "Id": "742435475",
-      "Name": "Play_PlayerState_Poison",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_PlayerState_Poison",
-      "GUID": "{C6500379-9435-4C6E-B593-99EE5AAE0BF1}",
-      "DurationType": "OneShot",
-      "DurationMin": "40.879124",
-      "DurationMax": "40.879124",
-      "MediaRefs": [
-       {
-        "Id": "87990099"
-       }
-      ]
-     },
-     {
       "Id": "1795633096",
       "Name": "Play_PlayerState_Spike_Destroy",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_PlayerState_Spike_Destroy",
@@ -441,18 +409,14 @@
       ]
      },
      {
-      "Id": "248667144",
-      "Name": "Play_PlayerState_Water",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_PlayerState_Water",
-      "GUID": "{ED4E9AD2-C214-42E2-80F0-73E2F29777E4}",
+      "Id": "550981067",
+      "Name": "Stop_KillingObject_Arrow",
+      "ObjectPath": "\\Events\\Default Work Unit\\Stop_KillingObject_Arrow",
+      "GUID": "{8FE73E9B-C7E3-4CE5-A0E0-4FDCB66C57AC}",
+      "MaxAttenuation": "0",
       "DurationType": "OneShot",
-      "DurationMin": "31.648354",
-      "DurationMax": "31.648354",
-      "MediaRefs": [
-       {
-        "Id": "155598266"
-       }
-      ]
+      "DurationMin": "0",
+      "DurationMax": "0"
      },
      {
       "Id": "2085787364",
@@ -463,10 +427,30 @@
       "DurationType": "OneShot",
       "DurationMin": "0",
       "DurationMax": "0"
+     },
+     {
+      "Id": "1769917345",
+      "Name": "Stop_KillingObject_LightningStorm",
+      "ObjectPath": "\\Events\\Default Work Unit\\Stop_KillingObject_LightningStorm",
+      "GUID": "{EFAD6DE1-DD05-4FD0-91A9-932E7ED09059}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "3063937136",
+      "Name": "Stop_KillingObject_Poison",
+      "ObjectPath": "\\Events\\Default Work Unit\\Stop_KillingObject_Poison",
+      "GUID": "{3D614DD5-70F7-4B87-B59F-315F8C5097EF}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
      }
     ]
    }
   ],
-  "FileHash": "{A1126727-33DB-C119-F160-F600DEBBA538}"
+  "FileHash": "{F6D44679-B35A-B19E-E2A9-5CCC36494D1F}"
  }
 }
