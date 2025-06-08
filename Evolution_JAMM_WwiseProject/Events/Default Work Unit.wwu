@@ -39,6 +39,204 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_IsKilled" ID="{51514CBF-05AE-4667-9FFE-3E0A82983F96}">
+					<ChildrenList>
+						<Action Name="" ID="{C9657977-C9F4-4C57-BD87-E401ECAEBB20}" ShortID="62838685">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="IsKilled" ID="{604B04DD-7588-4D81-B0F8-783604791240}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_IsKilledBy_Arrow" ID="{AFF42F31-F1BC-4051-B0EB-40AE6770258F}">
+					<ChildrenList>
+						<Action Name="" ID="{F2BEC9E0-583B-4AB5-B0F5-93E85CBC7D2A}" ShortID="100996343">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="IsKilledBy_Arrow" ID="{6280BF3F-893C-4EB8-85EA-F04C88A52739}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_IsKilledBy_Fall" ID="{35BD6A89-B9EF-42AB-B0D0-D15B66BEB23F}">
+					<ChildrenList>
+						<Action Name="" ID="{698C8B0C-46FD-4616-AEBB-77F0CD266DC2}" ShortID="234945472">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="IsKilledBy_Fall" ID="{851DE766-4910-48CE-BDD8-4A8860B45043}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_IsKilledBy_Lightning" ID="{270D6673-1532-47CF-9F15-0FFB4F2969D6}">
+					<ChildrenList>
+						<Action Name="" ID="{05C2048E-4DDE-4C51-B773-EAA7ABA131FC}" ShortID="157341317">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="IsKilledBy_Lightning" ID="{48D8850E-1D97-4D1A-AC31-0845B71F4E0B}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_IsKilledBy_Spike" ID="{039B3D17-F1DD-4854-9405-15258F2AB701}">
+					<ChildrenList>
+						<Action Name="" ID="{B2D77E92-134B-4D5B-B50C-1A6EE465E51A}" ShortID="701578339">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="IsKilledBy_Spike" ID="{DA6BC919-A452-4929-81AE-46153C6DE8B6}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_IsKilledBy_Stomp" ID="{E6DB31F2-1BE5-4FFD-B24E-07C9F1D312F3}">
+					<ChildrenList>
+						<Action Name="" ID="{2D798683-0E3A-41A1-B566-EAA952B9F2DF}" ShortID="396170309">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="IsKilledBy_Stomp" ID="{B9D3463D-D6F0-40C2-A828-07E50C284563}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_IsKilledBy_Water" ID="{05937559-3BBD-4181-849A-C79935000FE7}">
+					<ChildrenList>
+						<Action Name="" ID="{A428CEE3-B486-4F16-BE6E-8CEB7921ECA2}" ShortID="385203552">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="IsKilledBy_Water" ID="{501477C3-C245-44C2-9FEB-2A1656D0C0EC}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_KillingObject_Arrow" ID="{5DD70ED2-24EA-4EBC-9A93-9D754AE71F4F}">
+					<ChildrenList>
+						<Action Name="" ID="{5F3821DC-2600-4C89-8F23-8A6EC306D488}" ShortID="166210649">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="KillingObject_Arrow" ID="{AA2CB527-BD6E-48CF-A401-4E54C5E126EF}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_KillingObject_LightningStorm" ID="{734DF9B6-1EC0-4877-B521-7D3290D78568}">
+					<ChildrenList>
+						<Action Name="" ID="{274CE426-6530-427B-9A83-DB738F3A4FD0}" ShortID="41967228">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="KillingObject_LightningStorm" ID="{EB313667-CCFF-47F1-ACDF-55B0B490EB49}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_KillingObject_Poison" ID="{6B59C139-F4F0-4F3F-A229-CB6F547B792D}">
+					<ChildrenList>
+						<Action Name="" ID="{BE403372-C93D-486F-A195-BDFA7B9D1410}" ShortID="524866885">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="KillingObject_Poison" ID="{B8C77C31-A6DF-448E-B394-4787CC4D8BF5}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_PlayerState_Arrow" ID="{3280864D-9FC3-49F2-940B-158FE7017061}">
+					<ChildrenList>
+						<Action Name="" ID="{AD0E65C9-778A-4405-B64F-E1611B8BB21C}" ShortID="517080347">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlayerState_Arrow" ID="{2E7212AF-73BA-47C5-A53F-37278B29F975}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_PlayerState_Fire" ID="{4084E0C4-FEF1-4323-B1D7-160B9AA82A0D}">
+					<ChildrenList>
+						<Action Name="" ID="{DCCB862C-BB74-46B3-8E48-3FF5D3257AEF}" ShortID="154871352">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlayerState_Fire" ID="{84934286-473E-4F92-870E-A9D352068B71}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_PlayerState_Gravity" ID="{E56A7869-B9B0-4343-89FD-ADD130A9A996}">
+					<ChildrenList>
+						<Action Name="" ID="{D84C4614-46B4-41ED-AE8F-3CE0AB46194A}" ShortID="665187784">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlayerState_Gravity" ID="{78F927AC-3C93-44BF-9ABA-16069A467B40}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_PlayerState_Lightning" ID="{503D42E9-9576-4D46-AD86-96A748E5AAEE}">
+					<ChildrenList>
+						<Action Name="" ID="{0906CA30-FA38-4915-85A8-53FC5502D57B}" ShortID="677349904">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlayerState_Lightning" ID="{44FB9B37-2561-4F9A-BD9B-1388523C5FEF}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_PlayerState_Lightning_ActivateButton" ID="{6E0BAAED-B1B4-4956-91CB-C57478DAA9DA}">
+					<ChildrenList>
+						<Action Name="" ID="{5BD9B37D-35F5-4743-80C1-3D5821E9D1EC}" ShortID="587351985">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlayerState_Lightning_ActivateButton" ID="{CB40E0A6-2ADE-45E1-B648-B2F5540B49CA}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_PlayerState_Poison" ID="{C6500379-9435-4C6E-B593-99EE5AAE0BF1}">
+					<ChildrenList>
+						<Action Name="" ID="{ABAD5778-7F9A-4204-A038-F0E731AE0E00}" ShortID="784792598">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlayerState_Poison" ID="{65A020A6-E5A4-4A67-BC39-E467D9AEB8C5}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_PlayerState_Spike_Destroy" ID="{81C91A62-7514-4D5E-8A02-D2622D3090B2}">
+					<ChildrenList>
+						<Action Name="" ID="{D417E3B5-A284-4CF8-BF68-5C44875374F6}" ShortID="214568399">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlayerState_Spike_Destroy" ID="{5D668FFC-52FC-48AC-9FBD-7FA3CA0FBD8E}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_PlayerState_Water" ID="{ED4E9AD2-C214-42E2-80F0-73E2F29777E4}">
+					<ChildrenList>
+						<Action Name="" ID="{C7A695A8-8FFF-4356-8D4C-E6F10477A213}" ShortID="757273152">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlayerState_Water" ID="{B7EC958F-D006-4C5B-A4D3-D4B94794D28C}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
