@@ -15,6 +15,7 @@
 						<ObjectRef Name="Play_PlayerState_Lightning_ActivateButton" ID="{6E0BAAED-B1B4-4956-91CB-C57478DAA9DA}" WorkUnitID="{BA08F2A5-DF67-4E29-9B47-F79396BB1985}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_KillingObject_Poison" ID="{3D614DD5-70F7-4B87-B59F-315F8C5097EF}" WorkUnitID="{BA08F2A5-DF67-4E29-9B47-F79396BB1985}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_KillingObject_Fire" ID="{C79EC689-B752-4B95-A32D-FED8EB860414}" WorkUnitID="{BA08F2A5-DF67-4E29-9B47-F79396BB1985}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Random_Foosteps" ID="{BF8DCEE2-743C-4C3D-BCAA-1A7A1E8E791B}" WorkUnitID="{BA08F2A5-DF67-4E29-9B47-F79396BB1985}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_KillingObject_Arrow" ID="{8FE73E9B-C7E3-4CE5-A0E0-4FDCB66C57AC}" WorkUnitID="{BA08F2A5-DF67-4E29-9B47-F79396BB1985}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Jam_Evolution" ID="{79C44D13-9909-4CF5-BDB1-4DA772AEBA84}" WorkUnitID="{BA08F2A5-DF67-4E29-9B47-F79396BB1985}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_PlayerState_Spike_Destroy" ID="{81C91A62-7514-4D5E-8A02-D2622D3090B2}" WorkUnitID="{BA08F2A5-DF67-4E29-9B47-F79396BB1985}" Origin="Manual" Filter="7"/>
