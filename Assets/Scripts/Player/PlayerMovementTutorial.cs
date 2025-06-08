@@ -29,6 +29,7 @@ public class PlayerMovementTutorial : MonoBehaviour
     [Header("Animation")]
     public Animator animator;
     public float rotationSpeed = 10f; // Speed at which character rotates to face direction
+    public float jumpUpDuration = 0.5f; // How long to show JumpUp animation before switching to MidAir
 
     public Transform orientation;
 
@@ -53,7 +54,12 @@ public class PlayerMovementTutorial : MonoBehaviour
     // Animation states
     private bool isIdle;
     private bool isRunning;
-    private bool isInAir;
+    private bool isJumpUp;
+    private bool isMidAir;
+    
+    // Jump animation timing
+    private float jumpStartTime;
+    private bool hasJumped;
 
     private void Awake()
     {
@@ -155,9 +161,28 @@ public class PlayerMovementTutorial : MonoBehaviour
 
     private void Jump()
     {
-        
+        // Reset Y velocity and apply jump force
         rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
         rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
+        
+        // Track jump timing for animation
+        jumpStartTime = Time.time;
+        hasJumped = true;
+        
+        // Immediately set JumpUp animation state
+        isJumpUp = true;
+        isMidAir = false;
+        isIdle = false;
+        isRunning = false;
+        
+        if (animator != null)
+        {
+            animator.SetBool("isJumpUp", true);
+            animator.SetBool("isMidAir", false);
+            animator.SetBool("isIdle", false);
+            animator.SetBool("isRunning", false);
+            Debug.Log("Jump triggered - Setting isJumpUp to true");
+        }
     }
 
     private void ResetJump()
@@ -175,19 +200,48 @@ public class PlayerMovementTutorial : MonoBehaviour
 
     private void UpdateAnimationStates()
     {
+        if (hasJumped && Time.time - jumpStartTime < 0.1f)
+        {
+            return;
+        }
+        
+        // Determine current state
         bool hasMovementInput = moveInput.magnitude > 0.1f;
         Vector3 horizontalVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
         bool isMoving = horizontalVelocity.magnitude > 0.1f;
 
-        isInAir = !grounded;
-        isRunning = grounded && hasMovementInput && isMoving;
-        isIdle = grounded && !isRunning;
+        if (!grounded)
+        {
+            if (hasJumped && Time.time - jumpStartTime < jumpUpDuration)
+            {
+                isJumpUp = true;
+                isMidAir = false;
+            }
+            else
+            {
+                isJumpUp = false;
+                isMidAir = true;
+            }
+            
+            isIdle = false;
+            isRunning = false;
+        }
+        else
+        {
+            hasJumped = false;
+            isJumpUp = false;
+            isMidAir = false;
+            
+            isRunning = hasMovementInput && isMoving;
+            isIdle = !isRunning;
+        }
 
         if (animator != null)
         {
             animator.SetBool("isIdle", isIdle);
             animator.SetBool("isRunning", isRunning);
-            animator.SetBool("isInAir", isInAir);
+            animator.SetBool("isJumpUp", isJumpUp);
+            animator.SetBool("isMidAir", isMidAir);
         }
     }
 
