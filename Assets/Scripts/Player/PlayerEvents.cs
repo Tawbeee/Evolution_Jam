@@ -11,6 +11,7 @@ public static class PlayerEvents
     public static void Kill(KillingObjectType killingobject)
     {
         OnKilled?.Invoke(killingobject);
+        
     }
 
 }

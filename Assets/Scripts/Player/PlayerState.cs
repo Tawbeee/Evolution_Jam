@@ -39,7 +39,7 @@ public class PlayerState : MonoBehaviour
                 stateValue = "Water";
                 break;
             case KillingObjectType.Gravity:
-                stateValue = "Gravity";
+                stateValue = "Fall";
                 break;
             case KillingObjectType.Poison:
                 stateValue = "Poison";
@@ -48,10 +48,7 @@ public class PlayerState : MonoBehaviour
                 stateValue = "Arrow";
                 break;
             case KillingObjectType.Electricity:
-                stateValue = "Electricity";
-                break;
-            case KillingObjectType.Freeze:
-                stateValue = "Freeze";
+                stateValue = "Lightning";
                 break;
             case KillingObjectType.Stomp:
                 stateValue = "Stomp";
