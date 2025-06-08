@@ -5,6 +5,9 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovementTutorial : MonoBehaviour
 {
+
+    [Header("Wwise Events")] public AK.Wwise.Event myFootstep;
+    
     [Header("Movement")]
     public float moveSpeed;
     public float groundDrag;
@@ -50,6 +53,10 @@ public class PlayerMovementTutorial : MonoBehaviour
     [SerializeField] private float maxFallHeight = 10f; // hauteur maximale tolérée
     private float lastGroundY;
     private bool isFalling;
+
+    [Header("Audio")]
+    [SerializeField] private float footstepInterval = 0.5f; // Time between footsteps
+    private float lastFootstepTime;
 
     // Animation states
     private bool isIdle;
@@ -143,9 +150,22 @@ public class PlayerMovementTutorial : MonoBehaviour
         moveDirection = orientation.forward * moveInput.y + orientation.right * moveInput.x;
 
         if (grounded)
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+        {
+            rb.AddForce(moveDirection.normalized * (moveSpeed * 10f), ForceMode.Force);
+
+            // Check for footsteps - only when actively moving with input
+            bool hasMovementInput = moveInput.magnitude > 0.1f;
+            Vector3 horizontalVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
+            bool isActuallyMoving = horizontalVelocity.magnitude > 0.1f;
+            
+            if (hasMovementInput && isActuallyMoving && Time.time - lastFootstepTime >= footstepInterval)
+            {
+                myFootstep.Post(gameObject);
+                lastFootstepTime = Time.time;
+            }
+        }
         else
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);
+            rb.AddForce(moveDirection.normalized * (moveSpeed * 10f * airMultiplier), ForceMode.Force);
     }
 
     private void SpeedControl()

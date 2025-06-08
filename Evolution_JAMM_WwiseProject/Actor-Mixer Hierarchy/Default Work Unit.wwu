@@ -6,6 +6,13 @@
 				<Sound Name="Jam_Evolution" ID="{923BAAE2-429E-4992-BEC0-68B4A4EBB0DB}" ShortID="1059329711">
 					<PropertyList>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{DFD69D64-CD8B-4601-8BFB-397977949956}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-7</Value>
@@ -1217,6 +1224,121 @@
 						</Sound>
 					</ChildrenList>
 				</Folder>
+				<RandomSequenceContainer Name="Random_Foosteps" ID="{AD83FA01-2E2D-4538-9654-70F1DD800854}" ShortID="181219516">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{2421A608-507D-4E30-B0A1-3FB069A5053F}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="600"/>
+											<Property Name="Min" Type="Real64" Value="-600"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{06C908C4-958D-403B-8B13-B681B757A017}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA4DBB05-D11E-46E2-8ED0-D14B78566EF4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Footstep_03" ID="{E9F2B548-21D7-43E4-B089-B3DAC3B83D5F}" ShortID="505271228">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{06C908C4-958D-403B-8B13-B681B757A017}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA4DBB05-D11E-46E2-8ED0-D14B78566EF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Footstep_03" ID="{813DB8DB-7203-4946-A504-DFCCEDF1EBB2}">
+									<Language>SFX</Language>
+									<AudioFile>Footstep_03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="171845823"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Footstep_03" ID="{813DB8DB-7203-4946-A504-DFCCEDF1EBB2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Footstep_04" ID="{AD0E0926-72C6-420B-8B3D-1F9290C74B1F}" ShortID="737840477">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{06C908C4-958D-403B-8B13-B681B757A017}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA4DBB05-D11E-46E2-8ED0-D14B78566EF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Footstep_04" ID="{BCA429CC-8508-48DA-85DA-A0A139030015}">
+									<Language>SFX</Language>
+									<AudioFile>Footstep_04.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="868256220"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Footstep_04" ID="{BCA429CC-8508-48DA-85DA-A0A139030015}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Footstep_01" ID="{BBE3255C-21B3-4D00-AA68-5F01E25689D9}" ShortID="1021583739">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{06C908C4-958D-403B-8B13-B681B757A017}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA4DBB05-D11E-46E2-8ED0-D14B78566EF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Footstep_01" ID="{EDB2D881-01C5-43D3-9552-79079E5C8A56}">
+									<Language>SFX</Language>
+									<AudioFile>Footstep_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="321690596"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Footstep_01" ID="{EDB2D881-01C5-43D3-9552-79079E5C8A56}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Footstep_02" ID="{D1027BB1-59A1-4E39-9ADD-3EF969C4E0C2}" ShortID="220880693">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{06C908C4-958D-403B-8B13-B681B757A017}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA4DBB05-D11E-46E2-8ED0-D14B78566EF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Footstep_02" ID="{3BFAEEB0-F71A-4D09-907D-DDF9E345A2D8}">
+									<Language>SFX</Language>
+									<AudioFile>Footstep_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="691836377"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Footstep_02" ID="{3BFAEEB0-F71A-4D09-907D-DDF9E345A2D8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
