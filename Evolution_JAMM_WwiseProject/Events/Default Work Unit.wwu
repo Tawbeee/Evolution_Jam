@@ -25,6 +25,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Stop_KillingObject_Fire" ID="{C79EC689-B752-4B95-A32D-FED8EB860414}">
+					<ChildrenList>
+						<Action Name="" ID="{60957317-B9C9-46BF-8AD8-A21E2A25F6B4}" ShortID="717881247">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="KillingObject_Fire" ID="{3106B6A1-291E-404D-8AE7-72EAF3FE0AD0}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

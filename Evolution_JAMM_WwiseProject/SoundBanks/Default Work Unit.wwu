@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{317DE79A-0B50-4D6F-8CBA-A033D1654BD5}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Stop_KillingObject_Fire" ID="{C79EC689-B752-4B95-A32D-FED8EB860414}" WorkUnitID="{BA08F2A5-DF67-4E29-9B47-F79396BB1985}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Jam_Evolution" ID="{79C44D13-9909-4CF5-BDB1-4DA772AEBA84}" WorkUnitID="{BA08F2A5-DF67-4E29-9B47-F79396BB1985}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_KillingObject_Fire" ID="{0CD558FA-29CA-4EF9-88A2-C7A94B46E3F9}" WorkUnitID="{BA08F2A5-DF67-4E29-9B47-F79396BB1985}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
