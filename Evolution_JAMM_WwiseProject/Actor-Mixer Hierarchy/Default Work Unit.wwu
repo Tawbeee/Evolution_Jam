@@ -3,146 +3,6 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="KillingObject_Fire" ID="{3106B6A1-291E-404D-8AE7-72EAF3FE0AD0}" ShortID="173409028">
-					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-5</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Attenuation">
-							<Custom>
-								<Attenuation Name="Attenuation (Custom)" ID="{051D032C-BBD2-4576-8A6A-996233A8B3B8}" ShortID="380442016">
-									<PropertyList>
-										<Property Name="RadiusMax" Type="Real64" Value="35"/>
-									</PropertyList>
-									<CurveUsageInfoList>
-										<VolumeDryUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-												<Curve Name="VolumeDry" ID="{213370AC-DB67-479D-B50D-6DA887696C26}">
-													<PropertyList>
-														<Property Name="Flags" Type="int32" Value="3"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>0</XPos>
-															<YPos>0</YPos>
-															<Flags>5</Flags>
-														</Point>
-														<Point>
-															<XPos>35</XPos>
-															<YPos>-200</YPos>
-															<Flags>37</Flags>
-														</Point>
-													</PointList>
-												</Curve>
-											</CurveUsageInfo>
-										</VolumeDryUsage>
-										<VolumeWetGameUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-										</VolumeWetGameUsage>
-										<VolumeWetUserUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-										</VolumeWetUserUsage>
-										<LowPassFilterUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-												<Curve Name="LowPassFilter" ID="{9CDEDFC2-771C-4724-9865-576A08C48A27}">
-													<PropertyList>
-														<Property Name="Flags" Type="int32" Value="65537"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>0</XPos>
-															<YPos>0</YPos>
-															<Flags>5</Flags>
-														</Point>
-														<Point>
-															<XPos>24.6333185</XPos>
-															<YPos>43</YPos>
-															<Flags>0</Flags>
-														</Point>
-														<Point>
-															<XPos>35</XPos>
-															<YPos>100</YPos>
-															<Flags>37</Flags>
-														</Point>
-													</PointList>
-												</Curve>
-											</CurveUsageInfo>
-										</LowPassFilterUsage>
-										<HighPassFilterUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</HighPassFilterUsage>
-										<SpreadUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</SpreadUsage>
-										<FocusUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</FocusUsage>
-										<ObstructionVolumeUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-										</ObstructionVolumeUsage>
-										<ObstructionLPFUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-										</ObstructionLPFUsage>
-										<ObstructionHPFUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-										</ObstructionHPFUsage>
-										<OcclusionVolumeUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-										</OcclusionVolumeUsage>
-										<OcclusionLPFUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-										</OcclusionLPFUsage>
-										<OcclusionHPFUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-										</OcclusionHPFUsage>
-										<DiffractionVolumeUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-										</DiffractionVolumeUsage>
-										<DiffractionLPFUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-										</DiffractionLPFUsage>
-										<DiffractionHPFUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-										</DiffractionHPFUsage>
-										<TransmissionVolumeUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-										</TransmissionVolumeUsage>
-										<TransmissionLPFUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-										</TransmissionLPFUsage>
-										<TransmissionHPFUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-										</TransmissionHPFUsage>
-									</CurveUsageInfoList>
-								</Attenuation>
-							</Custom>
-						</Reference>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{06C908C4-958D-403B-8B13-B681B757A017}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA4DBB05-D11E-46E2-8ED0-D14B78566EF4}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="KillingObject_Fire" ID="{1D75C4D1-EC37-4FF2-AB45-00DFD5F61276}">
-							<Language>SFX</Language>
-							<AudioFile>KillingObject_Fire.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="886436606"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="KillingObject_Fire" ID="{1D75C4D1-EC37-4FF2-AB45-00DFD5F61276}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="Jam_Evolution" ID="{923BAAE2-429E-4992-BEC0-68B4A4EBB0DB}" ShortID="1059329711">
 					<PropertyList>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
@@ -173,228 +33,58 @@
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="PlayerState" ID="{007AB7DA-CC14-4E67-A54D-7E5A09BA968D}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Lightning" ID="{F0E0BE49-0592-401E-BEE8-9C838C1EF5AC}"/>
+								<CustomState Name="" ID="{E75BE87C-E1D0-476A-98DA-AEDB1A85D5CD}" ShortID="599775946"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Fall" ID="{ABAC829F-B2C7-413E-A6E1-ADD6D145F561}"/>
+								<CustomState Name="" ID="{74BE19C8-E536-48F7-A38D-76075CF540CB}" ShortID="34619347"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Nothing" ID="{6E5F144B-ECE7-4249-B65B-9274204FFD9B}"/>
+								<CustomState Name="" ID="{F2B735BD-EA59-4CD9-953C-CB688D31CF57}" ShortID="331863988"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Water" ID="{398701C0-A672-45E8-9551-2659036ABC45}"/>
+								<CustomState Name="" ID="{3593195E-6676-4DE9-8AEE-199A3F941E7F}" ShortID="154086554"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Spike" ID="{B55DF764-C068-4745-AA8A-F73CC384CD1C}"/>
+								<CustomState Name="" ID="{0F223D84-5577-4D1E-8C5C-FBEEB9EEDA45}" ShortID="125080070"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Fire" ID="{09678559-0AC8-48E4-B8E6-0F5C1BE3B4BC}"/>
+								<CustomState Name="" ID="{E5509318-1CA6-4A8E-B9D3-41400865479B}" ShortID="7885955"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Poison" ID="{E573765A-2D3F-4BA3-8D30-50380276C5DA}"/>
+								<CustomState Name="" ID="{D7D2BDA5-5BA0-4765-A915-56D862DDB5FA}" ShortID="391141696"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Stomp" ID="{F2D30FB1-3DE7-4D51-853C-6BEA1C50B93F}"/>
+								<CustomState Name="" ID="{87F4A440-4E5B-4DA2-B565-8AC7B8AB0619}" ShortID="906260739">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32" Value="500"/>
+										<Property Name="Volume" Type="Real64" Value="7"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Arrow" ID="{6E458A25-D949-4F2E-9738-A6B34E440E42}"/>
+								<CustomState Name="" ID="{B5A55B23-BF32-459D-82BE-9B3C311D91FE}" ShortID="913628620"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 					<ActiveSourceList>
 						<ActiveSource Name="Jam_Evolution" ID="{B52A0D51-6F8D-460F-8E03-D3D66C98FC8C}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="IsKilled" ID="{604B04DD-7588-4D81-B0F8-783604791240}" ShortID="65117792">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{06C908C4-958D-403B-8B13-B681B757A017}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA4DBB05-D11E-46E2-8ED0-D14B78566EF4}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="IsKilled" ID="{1F5142D6-BD6E-493B-9EEB-665B3D8F4C93}">
-							<Language>SFX</Language>
-							<AudioFile>IsKilled.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="1024707097"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="IsKilled" ID="{1F5142D6-BD6E-493B-9EEB-665B3D8F4C93}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="IsKilledBy_Arrow" ID="{6280BF3F-893C-4EB8-85EA-F04C88A52739}" ShortID="911081855">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{06C908C4-958D-403B-8B13-B681B757A017}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA4DBB05-D11E-46E2-8ED0-D14B78566EF4}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="IsKilledBy_Arrow" ID="{56CBFCC6-CCA5-4184-A46C-D6357D5A72AA}">
-							<Language>SFX</Language>
-							<AudioFile>IsKilledBy_Arrow.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="594596475"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="IsKilledBy_Arrow" ID="{56CBFCC6-CCA5-4184-A46C-D6357D5A72AA}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="IsKilledBy_Fall" ID="{851DE766-4910-48CE-BDD8-4A8860B45043}" ShortID="99112081">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{06C908C4-958D-403B-8B13-B681B757A017}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA4DBB05-D11E-46E2-8ED0-D14B78566EF4}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="IsKilledBy_Fall" ID="{32D994B3-98F6-4457-B603-77F0FD77FD53}">
-							<Language>SFX</Language>
-							<AudioFile>IsKilledBy_Fall.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="322950644"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="IsKilledBy_Fall" ID="{32D994B3-98F6-4457-B603-77F0FD77FD53}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="IsKilledBy_Lightning" ID="{48D8850E-1D97-4D1A-AC31-0845B71F4E0B}" ShortID="390350774">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{06C908C4-958D-403B-8B13-B681B757A017}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA4DBB05-D11E-46E2-8ED0-D14B78566EF4}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="IsKilledBy_Lightning" ID="{50A0389A-550E-4BC6-B40A-6555D088DE1A}">
-							<Language>SFX</Language>
-							<AudioFile>IsKilledBy_Lightning.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="23787141"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="IsKilledBy_Lightning" ID="{50A0389A-550E-4BC6-B40A-6555D088DE1A}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="IsKilledBy_Spike" ID="{DA6BC919-A452-4929-81AE-46153C6DE8B6}" ShortID="54234880">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{06C908C4-958D-403B-8B13-B681B757A017}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA4DBB05-D11E-46E2-8ED0-D14B78566EF4}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="IsKilledBy_Spike" ID="{0FA95ABD-F795-4D75-A461-5572ECAC9D70}">
-							<Language>SFX</Language>
-							<AudioFile>IsKilledBy_Spike.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="295306259"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="IsKilledBy_Spike" ID="{0FA95ABD-F795-4D75-A461-5572ECAC9D70}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="IsKilledBy_Stomp" ID="{B9D3463D-D6F0-40C2-A828-07E50C284563}" ShortID="949471777">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{06C908C4-958D-403B-8B13-B681B757A017}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA4DBB05-D11E-46E2-8ED0-D14B78566EF4}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="IsKilledBy_Stomp" ID="{FAAEEA4E-A076-46C3-8812-21E1A1E6E605}">
-							<Language>SFX</Language>
-							<AudioFile>IsKilledBy_Stomp.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="921927534"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="IsKilledBy_Stomp" ID="{FAAEEA4E-A076-46C3-8812-21E1A1E6E605}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="IsKilledBy_Water" ID="{501477C3-C245-44C2-9FEB-2A1656D0C0EC}" ShortID="485138115">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{06C908C4-958D-403B-8B13-B681B757A017}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA4DBB05-D11E-46E2-8ED0-D14B78566EF4}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="IsKilledBy_Water" ID="{B178CBF9-E6FF-4E8A-9E55-E3C1C9D66609}">
-							<Language>SFX</Language>
-							<AudioFile>IsKilledBy_Water.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="735792565"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="IsKilledBy_Water" ID="{B178CBF9-E6FF-4E8A-9E55-E3C1C9D66609}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="KillingObject_Arrow" ID="{AA2CB527-BD6E-48CF-A401-4E54C5E126EF}" ShortID="244500667">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{06C908C4-958D-403B-8B13-B681B757A017}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA4DBB05-D11E-46E2-8ED0-D14B78566EF4}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="KillingObject_Arrow" ID="{7E6962B4-C74A-41F6-B5F2-A2A323C8B045}">
-							<Language>SFX</Language>
-							<AudioFile>KillingObject_Arrow.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="264963240"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="KillingObject_Arrow" ID="{7E6962B4-C74A-41F6-B5F2-A2A323C8B045}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="KillingObject_LightningStorm" ID="{EB313667-CCFF-47F1-ACDF-55B0B490EB49}" ShortID="240313141">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{06C908C4-958D-403B-8B13-B681B757A017}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA4DBB05-D11E-46E2-8ED0-D14B78566EF4}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="KillingObject_LightningStorm" ID="{D932D185-4F8C-4F1E-8F6A-7DA83C4F6583}">
-							<Language>SFX</Language>
-							<AudioFile>KillingObject_LightningStorm.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="871730715"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="KillingObject_LightningStorm" ID="{D932D185-4F8C-4F1E-8F6A-7DA83C4F6583}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="KillingObject_Poison" ID="{B8C77C31-A6DF-448E-B394-4787CC4D8BF5}" ShortID="539043814">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{06C908C4-958D-403B-8B13-B681B757A017}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA4DBB05-D11E-46E2-8ED0-D14B78566EF4}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="KillingObject_Poison" ID="{F7A35844-ED01-4986-A637-178B4E4CFA8B}">
-							<Language>SFX</Language>
-							<AudioFile>KillingObject_Poison.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="245167605"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="KillingObject_Poison" ID="{F7A35844-ED01-4986-A637-178B4E4CFA8B}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="PlayerState_Lightning_ActivateButton" ID="{CB40E0A6-2ADE-45E1-B648-B2F5540B49CA}" ShortID="468899002">
@@ -1155,6 +845,374 @@
 							</StateInfo>
 							<ActiveSourceList>
 								<ActiveSource Name="PlayerState_Fire" ID="{944C4128-1304-4EE7-B99E-9F729FDFD600}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="KillingObject" ID="{53CA5200-E9D6-4419-B675-017331B16F4C}" ShortID="877808221">
+					<ChildrenList>
+						<Sound Name="KillingObject_Fire" ID="{3106B6A1-291E-404D-8AE7-72EAF3FE0AD0}" ShortID="173409028">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom>
+										<Attenuation Name="Attenuation (Custom)" ID="{051D032C-BBD2-4576-8A6A-996233A8B3B8}" ShortID="380442016">
+											<PropertyList>
+												<Property Name="RadiusMax" Type="Real64" Value="35"/>
+											</PropertyList>
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{213370AC-DB67-479D-B50D-6DA887696C26}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>35</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="LowPassFilter" ID="{9CDEDFC2-771C-4724-9865-576A08C48A27}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="65537"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>24.6333185</XPos>
+																	<YPos>43</YPos>
+																	<Flags>0</Flags>
+																</Point>
+																<Point>
+																	<XPos>35</XPos>
+																	<YPos>100</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+												<ObstructionVolumeUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</ObstructionVolumeUsage>
+												<ObstructionLPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</ObstructionLPFUsage>
+												<ObstructionHPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</ObstructionHPFUsage>
+												<OcclusionVolumeUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</OcclusionVolumeUsage>
+												<OcclusionLPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</OcclusionLPFUsage>
+												<OcclusionHPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</OcclusionHPFUsage>
+												<DiffractionVolumeUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</DiffractionVolumeUsage>
+												<DiffractionLPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</DiffractionLPFUsage>
+												<DiffractionHPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</DiffractionHPFUsage>
+												<TransmissionVolumeUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</TransmissionVolumeUsage>
+												<TransmissionLPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</TransmissionLPFUsage>
+												<TransmissionHPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</TransmissionHPFUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{06C908C4-958D-403B-8B13-B681B757A017}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA4DBB05-D11E-46E2-8ED0-D14B78566EF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="KillingObject_Fire" ID="{1D75C4D1-EC37-4FF2-AB45-00DFD5F61276}">
+									<Language>SFX</Language>
+									<AudioFile>KillingObject_Fire.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="886436606"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="KillingObject_Fire" ID="{1D75C4D1-EC37-4FF2-AB45-00DFD5F61276}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="KillingObject_Poison" ID="{B8C77C31-A6DF-448E-B394-4787CC4D8BF5}" ShortID="539043814">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{06C908C4-958D-403B-8B13-B681B757A017}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA4DBB05-D11E-46E2-8ED0-D14B78566EF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="KillingObject_Poison" ID="{F7A35844-ED01-4986-A637-178B4E4CFA8B}">
+									<Language>SFX</Language>
+									<AudioFile>KillingObject_Poison.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="245167605"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="KillingObject_Poison" ID="{F7A35844-ED01-4986-A637-178B4E4CFA8B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="KillingObject_LightningStorm" ID="{EB313667-CCFF-47F1-ACDF-55B0B490EB49}" ShortID="240313141">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{06C908C4-958D-403B-8B13-B681B757A017}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA4DBB05-D11E-46E2-8ED0-D14B78566EF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="KillingObject_LightningStorm" ID="{D932D185-4F8C-4F1E-8F6A-7DA83C4F6583}">
+									<Language>SFX</Language>
+									<AudioFile>KillingObject_LightningStorm.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="871730715"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="KillingObject_LightningStorm" ID="{D932D185-4F8C-4F1E-8F6A-7DA83C4F6583}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="KillingObject_Arrow" ID="{AA2CB527-BD6E-48CF-A401-4E54C5E126EF}" ShortID="244500667">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{06C908C4-958D-403B-8B13-B681B757A017}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA4DBB05-D11E-46E2-8ED0-D14B78566EF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="KillingObject_Arrow" ID="{7E6962B4-C74A-41F6-B5F2-A2A323C8B045}">
+									<Language>SFX</Language>
+									<AudioFile>KillingObject_Arrow.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="264963240"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="KillingObject_Arrow" ID="{7E6962B4-C74A-41F6-B5F2-A2A323C8B045}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="IsKilledBy" ID="{64128486-D8B7-439F-A728-DAB32D64A177}" ShortID="1064447150">
+					<ChildrenList>
+						<Sound Name="IsKilledBy_Fall" ID="{851DE766-4910-48CE-BDD8-4A8860B45043}" ShortID="99112081">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{06C908C4-958D-403B-8B13-B681B757A017}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA4DBB05-D11E-46E2-8ED0-D14B78566EF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="IsKilledBy_Fall" ID="{32D994B3-98F6-4457-B603-77F0FD77FD53}">
+									<Language>SFX</Language>
+									<AudioFile>IsKilledBy_Fall.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="322950644"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="IsKilledBy_Fall" ID="{32D994B3-98F6-4457-B603-77F0FD77FD53}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="IsKilledBy_Stomp" ID="{B9D3463D-D6F0-40C2-A828-07E50C284563}" ShortID="949471777">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{06C908C4-958D-403B-8B13-B681B757A017}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA4DBB05-D11E-46E2-8ED0-D14B78566EF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="IsKilledBy_Stomp" ID="{FAAEEA4E-A076-46C3-8812-21E1A1E6E605}">
+									<Language>SFX</Language>
+									<AudioFile>IsKilledBy_Stomp.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="921927534"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="IsKilledBy_Stomp" ID="{FAAEEA4E-A076-46C3-8812-21E1A1E6E605}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="IsKilledBy_Water" ID="{501477C3-C245-44C2-9FEB-2A1656D0C0EC}" ShortID="485138115">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{06C908C4-958D-403B-8B13-B681B757A017}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA4DBB05-D11E-46E2-8ED0-D14B78566EF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="IsKilledBy_Water" ID="{B178CBF9-E6FF-4E8A-9E55-E3C1C9D66609}">
+									<Language>SFX</Language>
+									<AudioFile>IsKilledBy_Water.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="735792565"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="IsKilledBy_Water" ID="{B178CBF9-E6FF-4E8A-9E55-E3C1C9D66609}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="IsKilledBy_Spike" ID="{DA6BC919-A452-4929-81AE-46153C6DE8B6}" ShortID="54234880">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{06C908C4-958D-403B-8B13-B681B757A017}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA4DBB05-D11E-46E2-8ED0-D14B78566EF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="IsKilledBy_Spike" ID="{0FA95ABD-F795-4D75-A461-5572ECAC9D70}">
+									<Language>SFX</Language>
+									<AudioFile>IsKilledBy_Spike.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="295306259"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="IsKilledBy_Spike" ID="{0FA95ABD-F795-4D75-A461-5572ECAC9D70}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="IsKilled" ID="{604B04DD-7588-4D81-B0F8-783604791240}" ShortID="65117792">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{06C908C4-958D-403B-8B13-B681B757A017}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA4DBB05-D11E-46E2-8ED0-D14B78566EF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="IsKilled" ID="{1F5142D6-BD6E-493B-9EEB-665B3D8F4C93}">
+									<Language>SFX</Language>
+									<AudioFile>IsKilled.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1024707097"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="IsKilled" ID="{1F5142D6-BD6E-493B-9EEB-665B3D8F4C93}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="IsKilledBy_Arrow" ID="{6280BF3F-893C-4EB8-85EA-F04C88A52739}" ShortID="911081855">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{06C908C4-958D-403B-8B13-B681B757A017}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA4DBB05-D11E-46E2-8ED0-D14B78566EF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="IsKilledBy_Arrow" ID="{56CBFCC6-CCA5-4184-A46C-D6357D5A72AA}">
+									<Language>SFX</Language>
+									<AudioFile>IsKilledBy_Arrow.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="594596475"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="IsKilledBy_Arrow" ID="{56CBFCC6-CCA5-4184-A46C-D6357D5A72AA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="IsKilledBy_Lightning" ID="{48D8850E-1D97-4D1A-AC31-0845B71F4E0B}" ShortID="390350774">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{06C908C4-958D-403B-8B13-B681B757A017}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA4DBB05-D11E-46E2-8ED0-D14B78566EF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="IsKilledBy_Lightning" ID="{50A0389A-550E-4BC6-B40A-6555D088DE1A}">
+									<Language>SFX</Language>
+									<AudioFile>IsKilledBy_Lightning.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="23787141"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="IsKilledBy_Lightning" ID="{50A0389A-550E-4BC6-B40A-6555D088DE1A}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
