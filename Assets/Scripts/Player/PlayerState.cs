@@ -17,8 +17,54 @@ public class PlayerState : MonoBehaviour
     [SerializeField] private float invincibilityDuration = 2f;
     public bool isInvincible = false;
 
+    public AK.Wwise.Event PlayerStateSound;
 
+    // Wwise Game State switching
+    private void SwitchWwiseGameState()
+    {
+        string gameStateName = "PlayerState";
+        string stateValue;
 
+        switch (playerState)
+        {
+            case KillingObjectType.None:
+                stateValue = "Nothing";
+                break;
+            case KillingObjectType.Spike:
+                stateValue = "Spike";
+                break;
+            case KillingObjectType.Fire:
+                stateValue = "Fire";
+                break;
+            case KillingObjectType.Water:
+                stateValue = "Water";
+                break;
+            case KillingObjectType.Gravity:
+                stateValue = "Gravity";
+                break;
+            case KillingObjectType.Poison:
+                stateValue = "Poison";
+                break;
+            case KillingObjectType.Arrow:
+                stateValue = "Arrow";
+                break;
+            case KillingObjectType.Electricity:
+                stateValue = "Electricity";
+                break;
+            case KillingObjectType.Freeze:
+                stateValue = "Freeze";
+                break;
+            case KillingObjectType.Stomp:
+                stateValue = "Stomp";
+                break;
+            default:
+                stateValue = "Nothing"; // Fallback to normal state
+                break;
+        }
+
+        AkUnitySoundEngine.SetState(gameStateName, stateValue);
+        Debug.Log($"Wwise Game State set to: {gameStateName} - {stateValue}");
+    }
 
     void Awake()
     {
@@ -30,6 +76,7 @@ public class PlayerState : MonoBehaviour
     {
         playerState = startState;
         
+        SwitchWwiseGameState();
     }
 
     private void OnEnable()
@@ -107,7 +154,8 @@ public class PlayerState : MonoBehaviour
         HandlePoisonEffect();
         HandleStompEffect();
 
-
+        // Switch Wwise Game State
+        SwitchWwiseGameState();
     }
 
     private IEnumerator ActivateInvincibility()
