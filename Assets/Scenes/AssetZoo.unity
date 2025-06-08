@@ -54125,6 +54125,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 306420221}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: fdcc2ea0b4a59d44ebb86899c1f72c78, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fdcc2ea0b4a59d44ebb86899c1f72c78, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fdcc2ea0b4a59d44ebb86899c1f72c78, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -59855,6 +59863,7 @@ MonoBehaviour:
   Animator: {fileID: 2047735940}
   RagdollRoot: {fileID: 376883739}
   StartRagdoll: 0
+  triggerRagdoll: 0
   Rigidbodies: []
 --- !u!1001 &2057829358
 PrefabInstance:
