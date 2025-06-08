@@ -308,6 +308,7 @@ MonoBehaviour:
       Path: Events\Default Work Unit\KillingObject\Play_KillingObject_Arrow
       maxAttenuation: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2047a09e (add events to soundbank)
       maxDuration: -1
       minDuration: -1
@@ -315,6 +316,10 @@ MonoBehaviour:
       maxDuration: 1.3186876
       minDuration: 1.3186876
 >>>>>>> e03d1308 (add footsteps)
+=======
+      maxDuration: 1.3186876
+      minDuration: 1.3186876
+>>>>>>> f7915084ff8f7597e77ee3d2bf7a9615acd6b2dc
     - name: Play_KillingObject_Fire
       guid: fa58d50cca29f94e88a2c7a94b46e3f9
       id: 3990733286
