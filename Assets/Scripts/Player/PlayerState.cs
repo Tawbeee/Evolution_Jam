@@ -17,7 +17,6 @@ public class PlayerState : MonoBehaviour
     [SerializeField] private float invincibilityDuration = 2f;
     public bool isInvincible = false;
 
-    public AK.Wwise.Event PlayerStateSound;
 
     // Wwise Game State switching
     private void SwitchWwiseGameState()
