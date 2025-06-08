@@ -586,16 +586,28 @@ PrefabInstance:
       value: SM_Bld_Door_02
       objectReference: {fileID: 0}
     - target: {fileID: 5748795966831871599, guid: 7e21c23b34f989f498c9f969a9ef4109, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.452893
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748795966831871599, guid: 7e21c23b34f989f498c9f969a9ef4109, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.452893
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748795966831871599, guid: 7e21c23b34f989f498c9f969a9ef4109, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.452893
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748795966831871599, guid: 7e21c23b34f989f498c9f969a9ef4109, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -29.14009
+      value: -30.795
       objectReference: {fileID: 0}
     - target: {fileID: 5748795966831871599, guid: 7e21c23b34f989f498c9f969a9ef4109, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5846562
+      value: -0.42571
       objectReference: {fileID: 0}
     - target: {fileID: 5748795966831871599, guid: 7e21c23b34f989f498c9f969a9ef4109, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -11.202124
+      value: -7.11
       objectReference: {fileID: 0}
     - target: {fileID: 5748795966831871599, guid: 7e21c23b34f989f498c9f969a9ef4109, type: 3}
       propertyPath: m_LocalRotation.w

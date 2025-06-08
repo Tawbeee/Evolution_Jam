@@ -19,13 +19,13 @@ public class Electricity : KillingObject
             thunder.SetActive(false);
             thunder.SetActive(true);
         }
-        // Active le thunder visuellement (réactivation pour rejouer l'effet)
+        // Active le thunder visuellement (rï¿½activation pour rejouer l'effet)
         
 
         // Attendre 0.2 seconde
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0f);
 
-        // Vérifie l'état du joueur
+        // Vï¿½rifie l'ï¿½tat du joueur
         if (other.CompareTag("Player"))
         {
             if (PlayerState.Instance.playerState != killingObjectType)

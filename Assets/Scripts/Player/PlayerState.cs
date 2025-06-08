@@ -27,6 +27,7 @@ public class PlayerState : MonoBehaviour
     private void Start()
     {
         playerState = startState;
+        
     }
 
     private void OnEnable()
@@ -47,7 +48,7 @@ public class PlayerState : MonoBehaviour
         // Si on est en poison, on lance la coroutine de mort
         if (playerState == KillingObjectType.Poison)
         {
-            // Si déjà en train de compter, on arrête pour redémarrer le timer
+            // Si dï¿½jï¿½ en train de compter, on arrï¿½te pour redï¿½marrer le timer
             if (poisonCoroutine != null)
                 StopCoroutine(poisonCoroutine);
 
@@ -68,14 +69,14 @@ public class PlayerState : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
 
-        // Vérifier que le joueur est toujours en poison au moment de la mort
+        // Vï¿½rifier que le joueur est toujours en poison au moment de la mort
         if (playerState == KillingObjectType.Poison)
         {
             PlayerEvents.Kill(KillingObjectType.Poison);
         }
     }
 
-    // Modifie ta méthode OnPlayerKilled pour appeler HandlePoisonEffect après changement d'état
+    // Modifie ta mï¿½thode OnPlayerKilled pour appeler HandlePoisonEffect aprï¿½s changement d'ï¿½tat
     private void OnPlayerKilled(KillingObjectType type)
     {
         if (playerState == KillingObjectType.Arrow)
@@ -119,7 +120,7 @@ public class PlayerState : MonoBehaviour
             ? new Vector3(1f, 0.4f, 1f)  // garde une taille visible
             : new Vector3(1f, 1f, 1f);
 
-        // Ajuste le CharacterController (évite qu’il flotte ou colle au sol)
+        // Ajuste le CharacterController (ï¿½vite quï¿½il flotte ou colle au sol)
         if (astronautCollider != null)
         {
             astronautCollider.height = isStomp ? 1f : 2f;
