@@ -48,11 +48,15 @@ public class PlayerState : MonoBehaviour
         // Si on est en poison, on lance la coroutine de mort
         if (playerState == KillingObjectType.Poison)
         {
-            // Si d�j� en train de compter, on arr�te pour red�marrer le timer
+            // Si déjà en train de compter, on arrête pour redémarrer le timer
             if (poisonCoroutine != null)
                 StopCoroutine(poisonCoroutine);
 
             poisonCoroutine = StartCoroutine(PoisonKillAfterDelay(30f));
+            
+            // Démarrer l'effet visuel rouge
+            if (PoisonScreenEffect.Instance != null)
+                PoisonScreenEffect.Instance.StartPoisonEffect(30f);
         }
         else
         {
@@ -62,6 +66,10 @@ public class PlayerState : MonoBehaviour
                 StopCoroutine(poisonCoroutine);
                 poisonCoroutine = null;
             }
+            
+            // Arrêter l'effet visuel rouge
+            if (PoisonScreenEffect.Instance != null)
+                PoisonScreenEffect.Instance.StopPoisonEffect();
         }
     }
 
@@ -69,14 +77,14 @@ public class PlayerState : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
 
-        // V�rifier que le joueur est toujours en poison au moment de la mort
+        // Vérifier que le joueur est toujours en poison au moment de la mort
         if (playerState == KillingObjectType.Poison)
         {
             PlayerEvents.Kill(KillingObjectType.Poison);
         }
     }
 
-    // Modifie ta m�thode OnPlayerKilled pour appeler HandlePoisonEffect apr�s changement d'�tat
+    // Modifie ta méthode OnPlayerKilled pour appeler HandlePoisonEffect après changement d'état
     private void OnPlayerKilled(KillingObjectType type)
     {
         if (playerState == KillingObjectType.Arrow)
@@ -120,7 +128,7 @@ public class PlayerState : MonoBehaviour
             ? new Vector3(1f, 0.4f, 1f)  // garde une taille visible
             : new Vector3(1f, 1f, 1f);
 
-        // Ajuste le CharacterController (�vite qu�il flotte ou colle au sol)
+        // Ajuste le CharacterController (évite qu'il flotte ou colle au sol)
         if (astronautCollider != null)
         {
             astronautCollider.height = isStomp ? 1f : 2f;
