@@ -1,0 +1,22 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	3285234865	PlayerState			\Default Work Unit\PlayerState	
+
+State	ID	Name	State Group			Notes
+	2812137	Spike	PlayerState			
+	748895195	None	PlayerState			
+	1166633136	Stomp	PlayerState			
+	1197258740	Arrow	PlayerState			
+	1413156513	Poison	PlayerState			
+	2512384458	Fall	PlayerState			
+	2654748154	Water	PlayerState			
+	2678880713	Fire	PlayerState			
+	3334464137	Lightning	PlayerState			
+	4248742144	Nothing	PlayerState			
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+
