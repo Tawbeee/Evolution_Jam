@@ -5,9 +5,26 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{317DE79A-0B50-4D6F-8CBA-A033D1654BD5}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Play_IsKilledBy_Arrow" ID="{AFF42F31-F1BC-4051-B0EB-40AE6770258F}" WorkUnitID="{BA08F2A5-DF67-4E29-9B47-F79396BB1985}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_IsKilledBy_Water" ID="{05937559-3BBD-4181-849A-C79935000FE7}" WorkUnitID="{BA08F2A5-DF67-4E29-9B47-F79396BB1985}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_IsKilledBy_Fall" ID="{35BD6A89-B9EF-42AB-B0D0-D15B66BEB23F}" WorkUnitID="{BA08F2A5-DF67-4E29-9B47-F79396BB1985}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_IsKilled" ID="{51514CBF-05AE-4667-9FFE-3E0A82983F96}" WorkUnitID="{BA08F2A5-DF67-4E29-9B47-F79396BB1985}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_IsKilledBy_Lightning" ID="{270D6673-1532-47CF-9F15-0FFB4F2969D6}" WorkUnitID="{BA08F2A5-DF67-4E29-9B47-F79396BB1985}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_IsKilledBy_Spike" ID="{039B3D17-F1DD-4854-9405-15258F2AB701}" WorkUnitID="{BA08F2A5-DF67-4E29-9B47-F79396BB1985}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_KillingObject_LightningStorm" ID="{734DF9B6-1EC0-4877-B521-7D3290D78568}" WorkUnitID="{BA08F2A5-DF67-4E29-9B47-F79396BB1985}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_PlayerState_Lightning_ActivateButton" ID="{6E0BAAED-B1B4-4956-91CB-C57478DAA9DA}" WorkUnitID="{BA08F2A5-DF67-4E29-9B47-F79396BB1985}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_KillingObject_Poison" ID="{3D614DD5-70F7-4B87-B59F-315F8C5097EF}" WorkUnitID="{BA08F2A5-DF67-4E29-9B47-F79396BB1985}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_KillingObject_Fire" ID="{C79EC689-B752-4B95-A32D-FED8EB860414}" WorkUnitID="{BA08F2A5-DF67-4E29-9B47-F79396BB1985}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Random_Foosteps" ID="{BF8DCEE2-743C-4C3D-BCAA-1A7A1E8E791B}" WorkUnitID="{BA08F2A5-DF67-4E29-9B47-F79396BB1985}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_KillingObject_Arrow" ID="{8FE73E9B-C7E3-4CE5-A0E0-4FDCB66C57AC}" WorkUnitID="{BA08F2A5-DF67-4E29-9B47-F79396BB1985}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Jam_Evolution" ID="{79C44D13-9909-4CF5-BDB1-4DA772AEBA84}" WorkUnitID="{BA08F2A5-DF67-4E29-9B47-F79396BB1985}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_PlayerState_Spike_Destroy" ID="{81C91A62-7514-4D5E-8A02-D2622D3090B2}" WorkUnitID="{BA08F2A5-DF67-4E29-9B47-F79396BB1985}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_KillingObject_Arrow" ID="{5DD70ED2-24EA-4EBC-9A93-9D754AE71F4F}" WorkUnitID="{BA08F2A5-DF67-4E29-9B47-F79396BB1985}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_KillingObject_Fire" ID="{0CD558FA-29CA-4EF9-88A2-C7A94B46E3F9}" WorkUnitID="{BA08F2A5-DF67-4E29-9B47-F79396BB1985}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_KillingObject_Poison" ID="{6B59C139-F4F0-4F3F-A229-CB6F547B792D}" WorkUnitID="{BA08F2A5-DF67-4E29-9B47-F79396BB1985}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_PlayerState" ID="{CDE177E7-0214-4FCD-9AF9-25FB19FF0323}" WorkUnitID="{BA08F2A5-DF67-4E29-9B47-F79396BB1985}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_KillingObject_LightningStorm" ID="{EFAD6DE1-DD05-4FD0-91A9-932E7ED09059}" WorkUnitID="{BA08F2A5-DF67-4E29-9B47-F79396BB1985}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_IsKilledBy_Stomp" ID="{E6DB31F2-1BE5-4FFD-B24E-07C9F1D312F3}" WorkUnitID="{BA08F2A5-DF67-4E29-9B47-F79396BB1985}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

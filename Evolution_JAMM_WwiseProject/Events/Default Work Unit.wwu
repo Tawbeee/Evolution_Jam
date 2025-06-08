@@ -3,17 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{BA08F2A5-DF67-4E29-9B47-F79396BB1985}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_KillingObject_Fire" ID="{0CD558FA-29CA-4EF9-88A2-C7A94B46E3F9}">
-					<ChildrenList>
-						<Action Name="" ID="{677A08E9-E4A4-49B6-938C-2712FBAADA65}" ShortID="921375661">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="KillingObject_Fire" ID="{3106B6A1-291E-404D-8AE7-72EAF3FE0AD0}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_Jam_Evolution" ID="{79C44D13-9909-4CF5-BDB1-4DA772AEBA84}">
 					<ChildrenList>
 						<Action Name="" ID="{C45703C8-60E9-42D1-BA3E-548857EC4E9D}" ShortID="654775349">
@@ -25,20 +14,281 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Stop_KillingObject_Fire" ID="{C79EC689-B752-4B95-A32D-FED8EB860414}">
+				<Event Name="Play_PlayerState_Lightning_ActivateButton" ID="{6E0BAAED-B1B4-4956-91CB-C57478DAA9DA}">
 					<ChildrenList>
-						<Action Name="" ID="{60957317-B9C9-46BF-8AD8-A21E2A25F6B4}" ShortID="717881247">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
+						<Action Name="" ID="{5BD9B37D-35F5-4743-80C1-3D5821E9D1EC}" ShortID="587351985">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="KillingObject_Fire" ID="{3106B6A1-291E-404D-8AE7-72EAF3FE0AD0}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+									<ObjectRef Name="PlayerState_Lightning_ActivateButton" ID="{CB40E0A6-2ADE-45E1-B648-B2F5540B49CA}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_PlayerState_Spike_Destroy" ID="{81C91A62-7514-4D5E-8A02-D2622D3090B2}">
+					<ChildrenList>
+						<Action Name="" ID="{D417E3B5-A284-4CF8-BF68-5C44875374F6}" ShortID="214568399">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlayerState_Spike_Destroy" ID="{5D668FFC-52FC-48AC-9FBD-7FA3CA0FBD8E}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Random_Foosteps" ID="{BF8DCEE2-743C-4C3D-BCAA-1A7A1E8E791B}">
+					<ChildrenList>
+						<Action Name="" ID="{CBF490F5-3B7F-4C70-986C-B7E6A42DB9EC}" ShortID="7298963">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Random_Foosteps" ID="{AD83FA01-2E2D-4538-9654-70F1DD800854}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="IsKilled" ID="{B832EF69-158E-4669-A7A2-8D59BE0E2DC2}" ShortID="629003356">
+					<ChildrenList>
+						<Event Name="Play_IsKilled" ID="{51514CBF-05AE-4667-9FFE-3E0A82983F96}">
+							<ChildrenList>
+								<Action Name="" ID="{C9657977-C9F4-4C57-BD87-E401ECAEBB20}" ShortID="62838685">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="IsKilled" ID="{604B04DD-7588-4D81-B0F8-783604791240}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_IsKilledBy_Water" ID="{05937559-3BBD-4181-849A-C79935000FE7}">
+							<ChildrenList>
+								<Action Name="" ID="{A428CEE3-B486-4F16-BE6E-8CEB7921ECA2}" ShortID="385203552">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="IsKilledBy_Water" ID="{501477C3-C245-44C2-9FEB-2A1656D0C0EC}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_IsKilledBy_Fall" ID="{35BD6A89-B9EF-42AB-B0D0-D15B66BEB23F}">
+							<ChildrenList>
+								<Action Name="" ID="{698C8B0C-46FD-4616-AEBB-77F0CD266DC2}" ShortID="234945472">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="IsKilledBy_Fall" ID="{851DE766-4910-48CE-BDD8-4A8860B45043}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_IsKilledBy_Lightning" ID="{270D6673-1532-47CF-9F15-0FFB4F2969D6}">
+							<ChildrenList>
+								<Action Name="" ID="{05C2048E-4DDE-4C51-B773-EAA7ABA131FC}" ShortID="157341317">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="IsKilledBy_Lightning" ID="{48D8850E-1D97-4D1A-AC31-0845B71F4E0B}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_IsKilledBy_Arrow" ID="{AFF42F31-F1BC-4051-B0EB-40AE6770258F}">
+							<ChildrenList>
+								<Action Name="" ID="{F2BEC9E0-583B-4AB5-B0F5-93E85CBC7D2A}" ShortID="100996343">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="IsKilledBy_Arrow" ID="{6280BF3F-893C-4EB8-85EA-F04C88A52739}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_IsKilledBy_Spike" ID="{039B3D17-F1DD-4854-9405-15258F2AB701}">
+							<ChildrenList>
+								<Action Name="" ID="{B2D77E92-134B-4D5B-B50C-1A6EE465E51A}" ShortID="701578339">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="IsKilledBy_Spike" ID="{DA6BC919-A452-4929-81AE-46153C6DE8B6}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_IsKilledBy_Stomp" ID="{E6DB31F2-1BE5-4FFD-B24E-07C9F1D312F3}">
+							<ChildrenList>
+								<Action Name="" ID="{2D798683-0E3A-41A1-B566-EAA952B9F2DF}" ShortID="396170309">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="IsKilledBy_Stomp" ID="{B9D3463D-D6F0-40C2-A828-07E50C284563}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="KillingObject" ID="{C894B0B6-F6A8-49A5-BDE0-52ED56E89A39}" ShortID="825357347">
+					<ChildrenList>
+						<Event Name="Play_KillingObject_Fire" ID="{0CD558FA-29CA-4EF9-88A2-C7A94B46E3F9}">
+							<ChildrenList>
+								<Action Name="" ID="{677A08E9-E4A4-49B6-938C-2712FBAADA65}" ShortID="921375661">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="KillingObject_Fire" ID="{3106B6A1-291E-404D-8AE7-72EAF3FE0AD0}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_KillingObject_Arrow" ID="{5DD70ED2-24EA-4EBC-9A93-9D754AE71F4F}">
+							<ChildrenList>
+								<Action Name="" ID="{5F3821DC-2600-4C89-8F23-8A6EC306D488}" ShortID="166210649">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="KillingObject_Arrow" ID="{AA2CB527-BD6E-48CF-A401-4E54C5E126EF}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_KillingObject_LightningStorm" ID="{734DF9B6-1EC0-4877-B521-7D3290D78568}">
+							<ChildrenList>
+								<Action Name="" ID="{274CE426-6530-427B-9A83-DB738F3A4FD0}" ShortID="41967228">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="KillingObject_LightningStorm" ID="{EB313667-CCFF-47F1-ACDF-55B0B490EB49}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_KillingObject_Poison" ID="{6B59C139-F4F0-4F3F-A229-CB6F547B792D}">
+							<ChildrenList>
+								<Action Name="" ID="{BE403372-C93D-486F-A195-BDFA7B9D1410}" ShortID="524866885">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="KillingObject_Poison" ID="{B8C77C31-A6DF-448E-B394-4787CC4D8BF5}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_KillingObject_Fire" ID="{C79EC689-B752-4B95-A32D-FED8EB860414}">
+							<ChildrenList>
+								<Action Name="" ID="{60957317-B9C9-46BF-8AD8-A21E2A25F6B4}" ShortID="717881247">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="KillingObject_Fire" ID="{3106B6A1-291E-404D-8AE7-72EAF3FE0AD0}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_KillingObject_Poison" ID="{3D614DD5-70F7-4B87-B59F-315F8C5097EF}">
+							<ChildrenList>
+								<Action Name="" ID="{9C3E6F08-8C43-46AB-BD2A-12E4FE30D5A4}" ShortID="171062742">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="KillingObject_Poison" ID="{B8C77C31-A6DF-448E-B394-4787CC4D8BF5}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_KillingObject_Arrow" ID="{8FE73E9B-C7E3-4CE5-A0E0-4FDCB66C57AC}">
+							<ChildrenList>
+								<Action Name="" ID="{11F9814F-1B27-4C5B-80C8-0890E45D772F}" ShortID="918077776">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="KillingObject_Arrow" ID="{AA2CB527-BD6E-48CF-A401-4E54C5E126EF}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_KillingObject_LightningStorm" ID="{EFAD6DE1-DD05-4FD0-91A9-932E7ED09059}">
+							<ChildrenList>
+								<Action Name="" ID="{775E09C5-7863-4367-A793-E6BCB6FFDBD5}" ShortID="378989128">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="KillingObject_LightningStorm" ID="{EB313667-CCFF-47F1-ACDF-55B0B490EB49}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="PlayerState" ID="{C427D2BB-A464-498F-9183-5DF492A154CC}" ShortID="685757671">
+					<ChildrenList>
+						<Event Name="Play_PlayerState" ID="{CDE177E7-0214-4FCD-9AF9-25FB19FF0323}">
+							<ChildrenList>
+								<Action Name="" ID="{25FDB362-305F-4CC1-9176-043F31F40C7D}" ShortID="357972790">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PlayerState_Arrow" ID="{2E7212AF-73BA-47C5-A53F-37278B29F975}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{70583C7B-C1B9-4AE0-BD7B-A2293562B2C1}" ShortID="379177120">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PlayerState_Fire" ID="{84934286-473E-4F92-870E-A9D352068B71}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{AB78EDBB-26F8-40D8-A665-C72A5B0A37D7}" ShortID="977712805">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PlayerState_Gravity" ID="{78F927AC-3C93-44BF-9ABA-16069A467B40}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{82D63A04-02A6-4E41-B996-F706C72C5B22}" ShortID="719408169">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PlayerState_Lightning" ID="{44FB9B37-2561-4F9A-BD9B-1388523C5FEF}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B29F5CC7-FB5A-4AAF-AC88-56945A772AA0}" ShortID="11321902">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PlayerState_Poison" ID="{65A020A6-E5A4-4A67-BC39-E467D9AEB8C5}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{76813E8B-F3B9-4052-B5FB-4CBBCE562795}" ShortID="129986879">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PlayerState_Spike" ID="{EA17124F-496C-4FC1-988D-C36D8637BAF6}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{C1AE1C53-DD18-462A-BE1A-0B47347A6D67}" ShortID="521735221">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PlayerState_Water" ID="{B7EC958F-D006-4C5B-A4D3-D4B94794D28C}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
