@@ -16,7 +16,7 @@ public class PlayerState : MonoBehaviour
 
     [SerializeField] private float invincibilityDuration = 2f;
     public bool isInvincible = false;
-
+    
 
     // Wwise Game State switching
     private void SwitchWwiseGameState()

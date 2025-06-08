@@ -8,7 +8,9 @@ public class PlayerAppearanceManager : MonoBehaviour
 
     [Header("Renderer cible")]
     [SerializeField] private Renderer targetRenderer; // Le renderer du joueur (MeshRenderer ou SkinnedMeshRenderer)
-    [SerializeField] private Transform fxSpawnPoint;  // O� instancier les FX (souvent transform du joueur)
+    [SerializeField] private Transform fxSpawnPoint;  // Où instancier les FX (souvent transform du joueur)
+    [SerializeField] private GameObject player;
+    [SerializeField] private GameObject arrow;
 
     private void OnEnable()
     {
@@ -25,9 +27,33 @@ public class PlayerAppearanceManager : MonoBehaviour
         // Recherche l'apparence correspondante
         Appearance match = appearances.Find(a => a.type == type);
 
+        Debug.Log("Kill");
+        if (type == KillingObjectType.Arrow)
+        {
+            Debug.Log("Arrow");
+            player.SetActive(false);
+            arrow.SetActive(true);
+            
+            // Assure-toi que le script de mouvement flèche est activé
+            PlayerArrowMovement arrowMovement = GetComponent<PlayerArrowMovement>();
+            if (arrowMovement != null)
+                arrowMovement.enabled = true;
+                
+            return;
+        }
+        
+        // Pour tous les autres types, revenir au joueur normal
+        arrow.SetActive(false);
+        player.SetActive(true);
+        
+        // Assure-toi que le script de mouvement flèche est désactivé
+        PlayerArrowMovement arrowMovement2 = GetComponent<PlayerArrowMovement>();
+        if (arrowMovement2 != null)
+            arrowMovement2.enabled = false;
+
         if (match != null)
         {
-            // Appliquer le nouveau mat�riau
+            // Appliquer le nouveau matériau
             if (targetRenderer != null && match.material != null)
             {
                 targetRenderer.material = match.material;

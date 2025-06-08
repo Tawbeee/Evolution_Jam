@@ -1571,6 +1571,8 @@ MonoBehaviour:
   astronautCollider: {fileID: 0}
   playerMovementScript: {fileID: 1042586688}
   arrowMovementScript: {fileID: 1042586693}
+  invincibilityDuration: 2
+  isInvincible: 0
 --- !u!114 &1042586691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2866,6 +2868,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &1027072422360678190
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1978166679752953446, guid: c6e907f992f061345b155a7db2f42a1d, type: 3}
+      propertyPath: m_Name
+      value: ArrowThrower
+      objectReference: {fileID: 0}
+    - target: {fileID: 4926564850594822667, guid: c6e907f992f061345b155a7db2f42a1d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 31.388145
+      objectReference: {fileID: 0}
+    - target: {fileID: 4926564850594822667, guid: c6e907f992f061345b155a7db2f42a1d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.9199848
+      objectReference: {fileID: 0}
+    - target: {fileID: 4926564850594822667, guid: c6e907f992f061345b155a7db2f42a1d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.5040674
+      objectReference: {fileID: 0}
+    - target: {fileID: 4926564850594822667, guid: c6e907f992f061345b155a7db2f42a1d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4926564850594822667, guid: c6e907f992f061345b155a7db2f42a1d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4926564850594822667, guid: c6e907f992f061345b155a7db2f42a1d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4926564850594822667, guid: c6e907f992f061345b155a7db2f42a1d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4926564850594822667, guid: c6e907f992f061345b155a7db2f42a1d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4926564850594822667, guid: c6e907f992f061345b155a7db2f42a1d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4926564850594822667, guid: c6e907f992f061345b155a7db2f42a1d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c6e907f992f061345b155a7db2f42a1d, type: 3}
 --- !u!1001 &2015641528232492120
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3333,3 +3392,4 @@ SceneRoots:
   - {fileID: 200660}
   - {fileID: 256693575}
   - {fileID: 986875380}
+  - {fileID: 1027072422360678190}
