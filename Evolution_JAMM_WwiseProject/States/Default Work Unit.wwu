@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{A5376B99-75F5-457C-8FF8-881D871265B4}" SchemaVersion="123">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{A5376B99-75F5-457C-8FF8-881D871265B4}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{A5376B99-75F5-457C-8FF8-881D871265B4}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="PlayerState" ID="{007AB7DA-CC14-4E67-A54D-7E5A09BA968D}">
+					<ChildrenList>
+						<State Name="None" ID="{82FF71AC-822A-4DE6-851A-87E24EDACC55}"/>
+						<State Name="Fire" ID="{09678559-0AC8-48E4-B8E6-0F5C1BE3B4BC}"/>
+						<State Name="Poison" ID="{E573765A-2D3F-4BA3-8D30-50380276C5DA}"/>
+						<State Name="Stomp" ID="{F2D30FB1-3DE7-4D51-853C-6BEA1C50B93F}"/>
+						<State Name="Water" ID="{398701C0-A672-45E8-9551-2659036ABC45}"/>
+						<State Name="Arrow" ID="{6E458A25-D949-4F2E-9738-A6B34E440E42}"/>
+						<State Name="Lightning" ID="{F0E0BE49-0592-401E-BEE8-9C838C1EF5AC}"/>
+						<State Name="Spike" ID="{B55DF764-C068-4745-AA8A-F73CC384CD1C}"/>
+						<State Name="Fall" ID="{ABAC829F-B2C7-413E-A6E1-ADD6D145F561}"/>
+						<State Name="Nothing" ID="{6E5F144B-ECE7-4249-B65B-9274204FFD9B}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

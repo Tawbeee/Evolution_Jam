@@ -177,28 +177,6 @@
 						<ActiveSource Name="Jam_Evolution" ID="{B52A0D51-6F8D-460F-8E03-D3D66C98FC8C}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="PlayerState_Fire" ID="{84934286-473E-4F92-870E-A9D352068B71}" ShortID="851867420">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{06C908C4-958D-403B-8B13-B681B757A017}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA4DBB05-D11E-46E2-8ED0-D14B78566EF4}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="PlayerState_Fire" ID="{944C4128-1304-4EE7-B99E-9F729FDFD600}">
-							<Language>SFX</Language>
-							<AudioFile>PlayerState_Fire.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="102579968"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="PlayerState_Fire" ID="{944C4128-1304-4EE7-B99E-9F729FDFD600}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="IsKilled" ID="{604B04DD-7588-4D81-B0F8-783604791240}" ShortID="65117792">
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -419,72 +397,6 @@
 						<ActiveSource Name="KillingObject_Poison" ID="{F7A35844-ED01-4986-A637-178B4E4CFA8B}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="PlayerState_Arrow" ID="{2E7212AF-73BA-47C5-A53F-37278B29F975}" ShortID="374602802">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{06C908C4-958D-403B-8B13-B681B757A017}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA4DBB05-D11E-46E2-8ED0-D14B78566EF4}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="PlayerState_Arrow" ID="{6477BC04-55E3-42A1-ADC2-448E6AE71F0A}">
-							<Language>SFX</Language>
-							<AudioFile>PlayerState_Arrow.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="670059735"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="PlayerState_Arrow" ID="{6477BC04-55E3-42A1-ADC2-448E6AE71F0A}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="PlayerState_Gravity" ID="{78F927AC-3C93-44BF-9ABA-16069A467B40}" ShortID="438113579">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{06C908C4-958D-403B-8B13-B681B757A017}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA4DBB05-D11E-46E2-8ED0-D14B78566EF4}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="PlayerState_Gravity" ID="{25FF17E2-1D49-40BA-8147-D9EE04239AD4}">
-							<Language>SFX</Language>
-							<AudioFile>PlayerState_Gravity.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="407112751"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="PlayerState_Gravity" ID="{25FF17E2-1D49-40BA-8147-D9EE04239AD4}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="PlayerState_Lightning" ID="{44FB9B37-2561-4F9A-BD9B-1388523C5FEF}" ShortID="548919431">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{06C908C4-958D-403B-8B13-B681B757A017}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA4DBB05-D11E-46E2-8ED0-D14B78566EF4}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="PlayerState_Lightning" ID="{4D53BB3C-ADDC-45BB-9D21-4A0DD1F28D55}">
-							<Language>SFX</Language>
-							<AudioFile>PlayerState_Lightning.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="57506197"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="PlayerState_Lightning" ID="{4D53BB3C-ADDC-45BB-9D21-4A0DD1F28D55}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="PlayerState_Lightning_ActivateButton" ID="{CB40E0A6-2ADE-45E1-B648-B2F5540B49CA}" ShortID="468899002">
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -505,28 +417,6 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="PlayerState_Lightning_ActivateButton" ID="{89549058-EB33-4FB7-82DC-D67C4FDB9DDB}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="PlayerState_Poison" ID="{65A020A6-E5A4-4A67-BC39-E467D9AEB8C5}" ShortID="815865029">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{06C908C4-958D-403B-8B13-B681B757A017}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA4DBB05-D11E-46E2-8ED0-D14B78566EF4}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="PlayerState_Poison" ID="{2D1C73FD-36C7-409A-BFAC-10FEA005D5C5}">
-							<Language>SFX</Language>
-							<AudioFile>PlayerState_Poison.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="87990099"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="PlayerState_Poison" ID="{2D1C73FD-36C7-409A-BFAC-10FEA005D5C5}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="PlayerState_Spike_Destroy" ID="{5D668FFC-52FC-48AC-9FBD-7FA3CA0FBD8E}" ShortID="723623696">
@@ -551,28 +441,724 @@
 						<ActiveSource Name="PlayerState_Spike_Destroy" ID="{EF29C45E-5ABF-499B-81A8-5A278FB67C0D}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="PlayerState_Water" ID="{B7EC958F-D006-4C5B-A4D3-D4B94794D28C}" ShortID="885842549">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{06C908C4-958D-403B-8B13-B681B757A017}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA4DBB05-D11E-46E2-8ED0-D14B78566EF4}"/>
-						</Reference>
-					</ReferenceList>
+				<Folder Name="PlayerState" ID="{D6279F8A-4483-4A96-866A-E49DCC552964}" ShortID="850661409">
 					<ChildrenList>
-						<AudioFileSource Name="PlayerState_Water" ID="{E9F545D1-2300-482B-BFA4-163EE1A3A566}">
-							<Language>SFX</Language>
-							<AudioFile>PlayerState_Water.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="155598266"/>
-							</MediaIDList>
-						</AudioFileSource>
+						<Sound Name="PlayerState_Arrow" ID="{2E7212AF-73BA-47C5-A53F-37278B29F975}" ShortID="374602802">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{06C908C4-958D-403B-8B13-B681B757A017}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA4DBB05-D11E-46E2-8ED0-D14B78566EF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="PlayerState_Arrow" ID="{6477BC04-55E3-42A1-ADC2-448E6AE71F0A}">
+									<Language>SFX</Language>
+									<AudioFile>PlayerState_Arrow.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="670059735"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="PlayerState" ID="{007AB7DA-CC14-4E67-A54D-7E5A09BA968D}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Lightning" ID="{F0E0BE49-0592-401E-BEE8-9C838C1EF5AC}"/>
+										<CustomState Name="" ID="{8C4A18E7-24D1-4E6F-9F78-DDF738260CDB}" ShortID="451837841">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Fall" ID="{ABAC829F-B2C7-413E-A6E1-ADD6D145F561}"/>
+										<CustomState Name="" ID="{806AE47D-DC7B-468B-882E-745FFA0FE285}" ShortID="478816996">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Nothing" ID="{6E5F144B-ECE7-4249-B65B-9274204FFD9B}"/>
+										<CustomState Name="" ID="{AB9842EC-3190-42B4-8AD4-468037F6746F}" ShortID="624605440">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Water" ID="{398701C0-A672-45E8-9551-2659036ABC45}"/>
+										<CustomState Name="" ID="{60D65F41-4F50-400D-8CBE-15B80129389E}" ShortID="992770760">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Spike" ID="{B55DF764-C068-4745-AA8A-F73CC384CD1C}"/>
+										<CustomState Name="" ID="{92C398F5-18E2-4EE0-A363-9C93D70694F5}" ShortID="366108643">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Fire" ID="{09678559-0AC8-48E4-B8E6-0F5C1BE3B4BC}"/>
+										<CustomState Name="" ID="{91E6260F-978A-4F1C-92BD-70E676FE87B5}" ShortID="712127747">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Poison" ID="{E573765A-2D3F-4BA3-8D30-50380276C5DA}"/>
+										<CustomState Name="" ID="{48125ABA-1387-47F2-B2B0-3DF42FAA04CE}" ShortID="534995143">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Stomp" ID="{F2D30FB1-3DE7-4D51-853C-6BEA1C50B93F}"/>
+										<CustomState Name="" ID="{CA9A674C-FF16-441A-BCB1-8BF41ED3162D}" ShortID="638760386">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Arrow" ID="{6E458A25-D949-4F2E-9738-A6B34E440E42}"/>
+										<CustomState Name="" ID="{415E37A0-EDE4-476A-B3A4-E6D5EE8E7656}" ShortID="636907483"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="PlayerState_Arrow" ID="{6477BC04-55E3-42A1-ADC2-448E6AE71F0A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="PlayerState_Poison" ID="{65A020A6-E5A4-4A67-BC39-E467D9AEB8C5}" ShortID="815865029">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{06C908C4-958D-403B-8B13-B681B757A017}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA4DBB05-D11E-46E2-8ED0-D14B78566EF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="PlayerState_Poison" ID="{2D1C73FD-36C7-409A-BFAC-10FEA005D5C5}">
+									<Language>SFX</Language>
+									<AudioFile>PlayerState_Poison.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="87990099"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="PlayerState" ID="{007AB7DA-CC14-4E67-A54D-7E5A09BA968D}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Lightning" ID="{F0E0BE49-0592-401E-BEE8-9C838C1EF5AC}"/>
+										<CustomState Name="" ID="{A9994333-FF64-41BE-B14F-8CA2E3268E24}" ShortID="74327773">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Fall" ID="{ABAC829F-B2C7-413E-A6E1-ADD6D145F561}"/>
+										<CustomState Name="" ID="{9730A1B8-2074-4211-A527-3284EDD5A2F6}" ShortID="190700491">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Nothing" ID="{6E5F144B-ECE7-4249-B65B-9274204FFD9B}"/>
+										<CustomState Name="" ID="{79F00656-2892-438B-A044-01C0F2C830D8}" ShortID="289739922">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Water" ID="{398701C0-A672-45E8-9551-2659036ABC45}"/>
+										<CustomState Name="" ID="{C4BE38D0-6551-4726-BA6D-17C28FE8850C}" ShortID="1012949816">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Spike" ID="{B55DF764-C068-4745-AA8A-F73CC384CD1C}"/>
+										<CustomState Name="" ID="{2C8D6EAE-B0E4-42E1-AE69-9B6BA4D6F11F}" ShortID="226385922">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Fire" ID="{09678559-0AC8-48E4-B8E6-0F5C1BE3B4BC}"/>
+										<CustomState Name="" ID="{604EB2DA-8DA9-461F-B85C-C168735D291D}" ShortID="151824048">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Poison" ID="{E573765A-2D3F-4BA3-8D30-50380276C5DA}"/>
+										<CustomState Name="" ID="{FF60F4A2-0943-42A8-B77F-AAA5BA500222}" ShortID="531007209"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Stomp" ID="{F2D30FB1-3DE7-4D51-853C-6BEA1C50B93F}"/>
+										<CustomState Name="" ID="{48F5E519-EDC0-40F1-8441-5F425BA84DC3}" ShortID="378333119">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Arrow" ID="{6E458A25-D949-4F2E-9738-A6B34E440E42}"/>
+										<CustomState Name="" ID="{EBE4404A-27EE-4FC2-8AB7-AD84EC4F13EB}" ShortID="889278301">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="PlayerState_Poison" ID="{2D1C73FD-36C7-409A-BFAC-10FEA005D5C5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="PlayerState_Lightning" ID="{44FB9B37-2561-4F9A-BD9B-1388523C5FEF}" ShortID="548919431">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{06C908C4-958D-403B-8B13-B681B757A017}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA4DBB05-D11E-46E2-8ED0-D14B78566EF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="PlayerState_Lightning" ID="{4D53BB3C-ADDC-45BB-9D21-4A0DD1F28D55}">
+									<Language>SFX</Language>
+									<AudioFile>PlayerState_Lightning.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="57506197"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="PlayerState" ID="{007AB7DA-CC14-4E67-A54D-7E5A09BA968D}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Lightning" ID="{F0E0BE49-0592-401E-BEE8-9C838C1EF5AC}"/>
+										<CustomState Name="" ID="{B044547E-F05B-4E01-9634-C96B9CF4CC11}" ShortID="167972453"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Fall" ID="{ABAC829F-B2C7-413E-A6E1-ADD6D145F561}"/>
+										<CustomState Name="" ID="{10E21FF1-E756-4CE4-A2A7-6DC6D465890A}" ShortID="372072580">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Nothing" ID="{6E5F144B-ECE7-4249-B65B-9274204FFD9B}"/>
+										<CustomState Name="" ID="{9B0F204A-0B32-43DC-AD34-165CA1DAF85A}" ShortID="27956395">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Water" ID="{398701C0-A672-45E8-9551-2659036ABC45}"/>
+										<CustomState Name="" ID="{33D405F3-EE63-45E7-A5CF-1F330F3AF3B1}" ShortID="406788366">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Spike" ID="{B55DF764-C068-4745-AA8A-F73CC384CD1C}"/>
+										<CustomState Name="" ID="{9B963D22-70C2-4F8E-953B-9B9F9824E78C}" ShortID="312976056">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Fire" ID="{09678559-0AC8-48E4-B8E6-0F5C1BE3B4BC}"/>
+										<CustomState Name="" ID="{2F69E847-032E-47CA-805A-AF7D6686C934}" ShortID="218514226">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Poison" ID="{E573765A-2D3F-4BA3-8D30-50380276C5DA}"/>
+										<CustomState Name="" ID="{18E5AC5E-2A48-48F6-A45E-ED7AB6FFC6DF}" ShortID="131917293">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Stomp" ID="{F2D30FB1-3DE7-4D51-853C-6BEA1C50B93F}"/>
+										<CustomState Name="" ID="{182B1BE9-31D4-444F-AD1F-D74FABDADB65}" ShortID="112725150">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Arrow" ID="{6E458A25-D949-4F2E-9738-A6B34E440E42}"/>
+										<CustomState Name="" ID="{CB98AD39-071B-4D56-9F39-1C3D51511BA2}" ShortID="889337140">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="PlayerState_Lightning" ID="{4D53BB3C-ADDC-45BB-9D21-4A0DD1F28D55}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="PlayerState_Spike" ID="{EA17124F-496C-4FC1-988D-C36D8637BAF6}" ShortID="1062688058">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{06C908C4-958D-403B-8B13-B681B757A017}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA4DBB05-D11E-46E2-8ED0-D14B78566EF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="PlayerState_Spike" ID="{F1EC1F55-D134-46D4-B50E-87E02451C948}">
+									<Language>SFX</Language>
+									<AudioFile>PlayerState_Spike.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="737506337"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="PlayerState" ID="{007AB7DA-CC14-4E67-A54D-7E5A09BA968D}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Lightning" ID="{F0E0BE49-0592-401E-BEE8-9C838C1EF5AC}"/>
+										<CustomState Name="" ID="{834BF2E3-F057-4F6D-80B0-DE238B658373}" ShortID="604179521">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Fall" ID="{ABAC829F-B2C7-413E-A6E1-ADD6D145F561}"/>
+										<CustomState Name="" ID="{7AA76B51-FB76-49CE-B8B7-A7EFE851F93B}" ShortID="374200955">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Nothing" ID="{6E5F144B-ECE7-4249-B65B-9274204FFD9B}"/>
+										<CustomState Name="" ID="{D3071298-1F47-40C6-A82A-7E7B47242BE5}" ShortID="152223841">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Water" ID="{398701C0-A672-45E8-9551-2659036ABC45}"/>
+										<CustomState Name="" ID="{551A21A9-88A4-4579-871F-5548761C9D22}" ShortID="61649173">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Spike" ID="{B55DF764-C068-4745-AA8A-F73CC384CD1C}"/>
+										<CustomState Name="" ID="{5A18E778-F3C5-493C-B886-367170D019B9}" ShortID="62584776"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Fire" ID="{09678559-0AC8-48E4-B8E6-0F5C1BE3B4BC}"/>
+										<CustomState Name="" ID="{169667CE-C975-429E-82F4-8AA7B28AF3AD}" ShortID="180409291">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Poison" ID="{E573765A-2D3F-4BA3-8D30-50380276C5DA}"/>
+										<CustomState Name="" ID="{45C82B59-50C6-4622-8DF8-31321F182F9C}" ShortID="693280452">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Stomp" ID="{F2D30FB1-3DE7-4D51-853C-6BEA1C50B93F}"/>
+										<CustomState Name="" ID="{14591430-5E8D-40AB-9EAB-8B185252FA40}" ShortID="571094399">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Arrow" ID="{6E458A25-D949-4F2E-9738-A6B34E440E42}"/>
+										<CustomState Name="" ID="{9D430AD7-E447-4AD0-B1FA-D35CF4FFDA89}" ShortID="1010176347">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="PlayerState_Spike" ID="{F1EC1F55-D134-46D4-B50E-87E02451C948}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="PlayerState_Gravity" ID="{78F927AC-3C93-44BF-9ABA-16069A467B40}" ShortID="438113579">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{06C908C4-958D-403B-8B13-B681B757A017}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA4DBB05-D11E-46E2-8ED0-D14B78566EF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="PlayerState_Gravity" ID="{25FF17E2-1D49-40BA-8147-D9EE04239AD4}">
+									<Language>SFX</Language>
+									<AudioFile>PlayerState_Gravity.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="407112751"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="PlayerState" ID="{007AB7DA-CC14-4E67-A54D-7E5A09BA968D}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Lightning" ID="{F0E0BE49-0592-401E-BEE8-9C838C1EF5AC}"/>
+										<CustomState Name="" ID="{92749783-A27B-46AD-8DA2-15584AAB1839}" ShortID="956471271">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Fall" ID="{ABAC829F-B2C7-413E-A6E1-ADD6D145F561}"/>
+										<CustomState Name="" ID="{BDC28268-9283-4696-8E75-67AD9BEEE3DD}" ShortID="866206422"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Nothing" ID="{6E5F144B-ECE7-4249-B65B-9274204FFD9B}"/>
+										<CustomState Name="" ID="{2EFEEF29-E99D-4BEA-8824-F8E6C34E315C}" ShortID="258360382">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Water" ID="{398701C0-A672-45E8-9551-2659036ABC45}"/>
+										<CustomState Name="" ID="{344E25C5-7D05-418F-A1B6-40810F93E20E}" ShortID="585933116">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Spike" ID="{B55DF764-C068-4745-AA8A-F73CC384CD1C}"/>
+										<CustomState Name="" ID="{6322C4C0-5F6F-4EE0-92DF-393DD54A5246}" ShortID="414538617">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Fire" ID="{09678559-0AC8-48E4-B8E6-0F5C1BE3B4BC}"/>
+										<CustomState Name="" ID="{B5D05DF4-6170-47B3-83A2-684EA5E62DFB}" ShortID="791219815">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Poison" ID="{E573765A-2D3F-4BA3-8D30-50380276C5DA}"/>
+										<CustomState Name="" ID="{7BC03A2F-07D8-4A3B-99DF-9CCF0C02B486}" ShortID="986758855">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Stomp" ID="{F2D30FB1-3DE7-4D51-853C-6BEA1C50B93F}"/>
+										<CustomState Name="" ID="{51008A5D-30B8-434E-8E22-00151A4474E8}" ShortID="125877301">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Arrow" ID="{6E458A25-D949-4F2E-9738-A6B34E440E42}"/>
+										<CustomState Name="" ID="{33E97FED-9BE3-4830-9F58-EE6EB7CE56EC}" ShortID="264987533">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="PlayerState_Gravity" ID="{25FF17E2-1D49-40BA-8147-D9EE04239AD4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="PlayerState_Water" ID="{B7EC958F-D006-4C5B-A4D3-D4B94794D28C}" ShortID="885842549">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{06C908C4-958D-403B-8B13-B681B757A017}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA4DBB05-D11E-46E2-8ED0-D14B78566EF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="PlayerState_Water" ID="{E9F545D1-2300-482B-BFA4-163EE1A3A566}">
+									<Language>SFX</Language>
+									<AudioFile>PlayerState_Water.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="155598266"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="PlayerState" ID="{007AB7DA-CC14-4E67-A54D-7E5A09BA968D}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Lightning" ID="{F0E0BE49-0592-401E-BEE8-9C838C1EF5AC}"/>
+										<CustomState Name="" ID="{AF81677F-D48E-4937-AF47-4C55C67520CA}" ShortID="110420978">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Fall" ID="{ABAC829F-B2C7-413E-A6E1-ADD6D145F561}"/>
+										<CustomState Name="" ID="{33866793-E0F8-4F94-A27F-528C3710168B}" ShortID="248493293">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Nothing" ID="{6E5F144B-ECE7-4249-B65B-9274204FFD9B}"/>
+										<CustomState Name="" ID="{80610B19-2B3B-46C7-B210-E217B72D670C}" ShortID="263752751">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Water" ID="{398701C0-A672-45E8-9551-2659036ABC45}"/>
+										<CustomState Name="" ID="{E9D368A4-7772-4F4A-841A-F669AB2FF95C}" ShortID="627703209"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Spike" ID="{B55DF764-C068-4745-AA8A-F73CC384CD1C}"/>
+										<CustomState Name="" ID="{3C9E0CD8-486B-4791-BB7B-8A9CC6168F44}" ShortID="322256514">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Fire" ID="{09678559-0AC8-48E4-B8E6-0F5C1BE3B4BC}"/>
+										<CustomState Name="" ID="{DD12C842-C09B-43C6-BABF-177FE1E39D01}" ShortID="355602880">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Poison" ID="{E573765A-2D3F-4BA3-8D30-50380276C5DA}"/>
+										<CustomState Name="" ID="{29CC4B2A-1FA1-4308-ACB7-01C43D657922}" ShortID="231511527">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Stomp" ID="{F2D30FB1-3DE7-4D51-853C-6BEA1C50B93F}"/>
+										<CustomState Name="" ID="{863DD980-FBA3-4534-8D1E-DC520F9CA8B6}" ShortID="637652946">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Arrow" ID="{6E458A25-D949-4F2E-9738-A6B34E440E42}"/>
+										<CustomState Name="" ID="{42F6C5A4-0D24-4B54-B94B-491CAF4DDF91}" ShortID="1069662769">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="PlayerState_Water" ID="{E9F545D1-2300-482B-BFA4-163EE1A3A566}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="PlayerState_Fire" ID="{84934286-473E-4F92-870E-A9D352068B71}" ShortID="851867420">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{06C908C4-958D-403B-8B13-B681B757A017}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA4DBB05-D11E-46E2-8ED0-D14B78566EF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="PlayerState_Fire" ID="{944C4128-1304-4EE7-B99E-9F729FDFD600}">
+									<Language>SFX</Language>
+									<AudioFile>PlayerState_Fire.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="102579968"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="PlayerState" ID="{007AB7DA-CC14-4E67-A54D-7E5A09BA968D}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Lightning" ID="{F0E0BE49-0592-401E-BEE8-9C838C1EF5AC}"/>
+										<CustomState Name="" ID="{AEBFFB79-0750-48A1-A91C-9EDC8587BF5A}" ShortID="874162976">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Fall" ID="{ABAC829F-B2C7-413E-A6E1-ADD6D145F561}"/>
+										<CustomState Name="" ID="{83260D3B-4B4E-4525-BB72-098A861CA31A}" ShortID="963426000">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Nothing" ID="{6E5F144B-ECE7-4249-B65B-9274204FFD9B}"/>
+										<CustomState Name="" ID="{6A63AF2B-7492-4D59-BAE3-94A907F339B9}" ShortID="335779951">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Water" ID="{398701C0-A672-45E8-9551-2659036ABC45}"/>
+										<CustomState Name="" ID="{E2FC5C44-63E3-43BB-ABD9-E5442EE38929}" ShortID="924555055">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Spike" ID="{B55DF764-C068-4745-AA8A-F73CC384CD1C}"/>
+										<CustomState Name="" ID="{4B1B47C8-111D-4EA2-A45E-C1957E16A30F}" ShortID="444915027">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Fire" ID="{09678559-0AC8-48E4-B8E6-0F5C1BE3B4BC}"/>
+										<CustomState Name="" ID="{024846F0-7129-40BC-9A5F-25E03B235021}" ShortID="22094492"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Poison" ID="{E573765A-2D3F-4BA3-8D30-50380276C5DA}"/>
+										<CustomState Name="" ID="{07AA38A5-1ED7-41B5-B4E5-F6472942CF0B}" ShortID="660910616">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Stomp" ID="{F2D30FB1-3DE7-4D51-853C-6BEA1C50B93F}"/>
+										<CustomState Name="" ID="{CEA5EDF3-C721-4EDD-9848-DF103060EDB4}" ShortID="916986485">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Arrow" ID="{6E458A25-D949-4F2E-9738-A6B34E440E42}"/>
+										<CustomState Name="" ID="{449D1967-C791-4904-88ED-FC9963C309E7}" ShortID="728670285">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="PlayerState_Fire" ID="{944C4128-1304-4EE7-B99E-9F729FDFD600}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="PlayerState_Water" ID="{E9F545D1-2300-482B-BFA4-163EE1A3A566}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

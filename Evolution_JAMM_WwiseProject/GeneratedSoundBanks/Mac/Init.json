@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{89C218AE-9E0B-8562-B379-0ABAC724E516}",
+    "Hash": "{BFAB1116-4A76-0698-C1C1-22764E7A3740}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -41,9 +41,79 @@
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus",
       "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
      }
+    ],
+    "StateGroups": [
+     {
+      "Id": "3285234865",
+      "Name": "PlayerState",
+      "ObjectPath": "\\States\\Default Work Unit\\PlayerState",
+      "GUID": "{007AB7DA-CC14-4E67-A54D-7E5A09BA968D}",
+      "States": [
+       {
+        "Id": "2812137",
+        "Name": "Spike",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerState\\Spike",
+        "GUID": "{B55DF764-C068-4745-AA8A-F73CC384CD1C}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerState\\None",
+        "GUID": "{82FF71AC-822A-4DE6-851A-87E24EDACC55}"
+       },
+       {
+        "Id": "1166633136",
+        "Name": "Stomp",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerState\\Stomp",
+        "GUID": "{F2D30FB1-3DE7-4D51-853C-6BEA1C50B93F}"
+       },
+       {
+        "Id": "1197258740",
+        "Name": "Arrow",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerState\\Arrow",
+        "GUID": "{6E458A25-D949-4F2E-9738-A6B34E440E42}"
+       },
+       {
+        "Id": "1413156513",
+        "Name": "Poison",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerState\\Poison",
+        "GUID": "{E573765A-2D3F-4BA3-8D30-50380276C5DA}"
+       },
+       {
+        "Id": "2512384458",
+        "Name": "Fall",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerState\\Fall",
+        "GUID": "{ABAC829F-B2C7-413E-A6E1-ADD6D145F561}"
+       },
+       {
+        "Id": "2654748154",
+        "Name": "Water",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerState\\Water",
+        "GUID": "{398701C0-A672-45E8-9551-2659036ABC45}"
+       },
+       {
+        "Id": "2678880713",
+        "Name": "Fire",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerState\\Fire",
+        "GUID": "{09678559-0AC8-48E4-B8E6-0F5C1BE3B4BC}"
+       },
+       {
+        "Id": "3334464137",
+        "Name": "Lightning",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerState\\Lightning",
+        "GUID": "{F0E0BE49-0592-401E-BEE8-9C838C1EF5AC}"
+       },
+       {
+        "Id": "4248742144",
+        "Name": "Nothing",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerState\\Nothing",
+        "GUID": "{6E5F144B-ECE7-4249-B65B-9274204FFD9B}"
+       }
+      ]
+     }
     ]
    }
   ],
-  "FileHash": "{F17216C3-5609-A3AE-78C3-55D19F934F07}"
+  "FileHash": "{84F45C1C-A205-B3FE-5321-87D7D369B303}"
  }
 }

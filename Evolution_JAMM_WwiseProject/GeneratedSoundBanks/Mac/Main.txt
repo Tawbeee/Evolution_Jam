@@ -1,45 +1,59 @@
 Event	ID	Name			Wwise Object Path	Notes
 	201740281	Play_IsKilledBy_Spike			\Default Work Unit\Play_IsKilledBy_Spike	
-	248667144	Play_PlayerState_Water			\Default Work Unit\Play_PlayerState_Water	
-	742435475	Play_PlayerState_Poison			\Default Work Unit\Play_PlayerState_Poison	
-	1056671487	Play_PlayerState_Lightning			\Default Work Unit\Play_PlayerState_Lightning	
+	550981067	Stop_KillingObject_Arrow			\Default Work Unit\Stop_KillingObject_Arrow	
 	1365561248	Play_IsKilledBy_Stomp			\Default Work Unit\Play_IsKilledBy_Stomp	
 	1457347807	Play_KillingObject_LightningStorm			\Default Work Unit\Play_KillingObject_LightningStorm	
+	1513779728	Play_PlayerState			\Default Work Unit\Play_PlayerState	
 	1734114553	Play_IsKilledBy_Lightning			\Default Work Unit\Play_IsKilledBy_Lightning	
+	1769917345	Stop_KillingObject_LightningStorm			\Default Work Unit\Stop_KillingObject_LightningStorm	
 	1795633096	Play_PlayerState_Spike_Destroy			\Default Work Unit\Play_PlayerState_Spike_Destroy	
 	1856267421	Play_PlayerState_Lightning_ActivateButton			\Default Work Unit\Play_PlayerState_Lightning_ActivateButton	
 	2085787364	Stop_KillingObject_Fire			\Default Work Unit\Stop_KillingObject_Fire	
 	2095147940	Play_IsKilledBy_Arrow			\Default Work Unit\Play_IsKilledBy_Arrow	
 	2608619777	Play_KillingObject_Arrow			\Default Work Unit\Play_KillingObject_Arrow	
-	2709068703	Play_PlayerState_Gravity			\Default Work Unit\Play_PlayerState_Gravity	
-	2923772123	Play_PlayerState_Fire			\Default Work Unit\Play_PlayerState_Fire	
 	3013923882	Play_IsKilledBy_Water			\Default Work Unit\Play_IsKilledBy_Water	
+	3063937136	Stop_KillingObject_Poison			\Default Work Unit\Stop_KillingObject_Poison	
 	3075399896	Play_Jam_Evolution			\Default Work Unit\Play_Jam_Evolution	
 	3385860117	Play_IsKilled			\Default Work Unit\Play_IsKilled	
 	3446595322	Play_IsKilledBy_Fall			\Default Work Unit\Play_IsKilledBy_Fall	
 	3516034874	Play_KillingObject_Poison			\Default Work Unit\Play_KillingObject_Poison	
-	3553365610	Play_PlayerState_Arrow			\Default Work Unit\Play_PlayerState_Arrow	
 	3990733286	Play_KillingObject_Fire			\Default Work Unit\Play_KillingObject_Fire	
 
+State Group	ID	Name			Wwise Object Path	Notes
+	3285234865	PlayerState			\Default Work Unit\PlayerState	
+
+State	ID	Name	State Group			Notes
+	2812137	Spike	PlayerState			
+	748895195	None	PlayerState			
+	1166633136	Stomp	PlayerState			
+	1197258740	Arrow	PlayerState			
+	1413156513	Poison	PlayerState			
+	2512384458	Fall	PlayerState			
+	2654748154	Water	PlayerState			
+	2678880713	Fire	PlayerState			
+	3334464137	Lightning	PlayerState			
+	4248742144	Nothing	PlayerState			
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	23787141	IsKilledBy_Lightning	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\FC\{FCB68EAE-D6CB-506C-F850-B0A30CE01C32}.wem		\Actor-Mixer Hierarchy\Default Work Unit\IsKilledBy_Lightning		269108
-	57506197	PlayerState_Lightning	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\3A\{3A25BFCC-F4DF-EA69-7D0D-AA719B254C97}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerState_Lightning		3702952
-	87990099	PlayerState_Poison	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\69\{69DD8752-EBEC-0D50-8912-FBC9005FB1D1}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerState_Poison		7848888
-	102579968	PlayerState_Fire	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\70\{7069C97A-2C2D-3BAC-0A26-86B91A5E155D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerState_Fire		3940332
-	155598266	PlayerState_Water	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\FF\{FF6F1DC9-0E45-589A-41E1-9D140F0E8C77}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerState_Water		6076580
+	23787141	IsKilledBy_Lightning	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\FC\{FCB68EAE-D6CB-506C-F850-B0A30CE01C32}.wem		\Actor-Mixer Hierarchy\Default Work Unit\IsKilledBy\IsKilledBy_Lightning		269108
+	57506197	PlayerState_Lightning	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\4F\{4F791CE1-E6CB-0977-112B-892D6AD12959}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerState\PlayerState_Lightning		3702952
+	87990099	PlayerState_Poison	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\27\{27C3CB73-0B32-60D3-CCA5-B6E18AB74B1D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerState\PlayerState_Poison		7848888
+	102579968	PlayerState_Fire	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\D8\{D8381355-028C-1B0E-1B20-239A61FAE313}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerState\PlayerState_Fire		3940332
+	155598266	PlayerState_Water	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\83\{83F20AEF-3109-AC49-EB45-90840676D2A9}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerState\PlayerState_Water		6076580
 	163078192	PlayerState_Lightning_ActivateButton	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\84\{84250BBE-F311-CD27-39E1-DD2D2C5F2E91}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerState_Lightning_ActivateButton		205812
 	197466271	PlayerState_Spike_Destroy	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\6C\{6CBCABD0-287B-C6EC-3673-F2D959FAB12A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerState_Spike_Destroy		316580
 	243561499	Jam_Evolution	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\40\{40220D61-7176-DD19-39DE-F5D7FBFF0758}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jam_Evolution		32408008
-	245167605	KillingObject_Poison	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\FE\{FE5618CD-E1DA-1333-655B-F8D28B9A840F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\KillingObject_Poison		4304272
-	264963240	KillingObject_Arrow	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\B1\{B1D9ADC1-5697-1B06-C6D5-EFBA5183BF72}.wem		\Actor-Mixer Hierarchy\Default Work Unit\KillingObject_Arrow		253284
-	295306259	IsKilledBy_Spike	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\96\{96B34557-F024-A15C-9ECF-30F7C658D883}.wem		\Actor-Mixer Hierarchy\Default Work Unit\IsKilledBy_Spike		126688
-	322950644	IsKilledBy_Fall	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\19\{198CCA33-B520-FEE6-9ADC-976E0A86E0D5}.wem		\Actor-Mixer Hierarchy\Default Work Unit\IsKilledBy_Fall		698468
-	407112751	PlayerState_Gravity	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\73\{73A47F2F-4C0C-4816-1269-5166906720B6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerState_Gravity		4051084
-	594596475	IsKilledBy_Arrow	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\31\{31BF0CD8-FFF8-D5A7-1401-C7B0AE2EE5DD}.wem		\Actor-Mixer Hierarchy\Default Work Unit\IsKilledBy_Arrow		253284
-	670059735	PlayerState_Arrow	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\29\{29FEE934-CAE5-1C28-1592-66507BDDBFDB}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerState_Arrow		1266032
-	735792565	IsKilledBy_Water	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\D5\{D528A846-365B-9E82-3CC5-38FA5EC28545}.wem		\Actor-Mixer Hierarchy\Default Work Unit\IsKilledBy_Water		253284
-	871730715	KillingObject_LightningStorm	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\BC\{BCF2C27F-AAFA-2589-6CB4-4C35E118745B}.wem		\Actor-Mixer Hierarchy\Default Work Unit\KillingObject_LightningStorm		2025592
-	886436606	KillingObject_Fire	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\C9\{C9E81E54-3C78-C2E5-AB07-FD57CF2FA2E3}.wem		\Actor-Mixer Hierarchy\Default Work Unit\KillingObject_Fire		2723964
-	921927534	IsKilledBy_Stomp	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\14\{14A2C946-F114-F8CD-5DE4-18BC889B2A0E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\IsKilledBy_Stomp		633064
-	1024707097	IsKilled	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\4F\{4FC607E8-80B5-9409-888C-1A340C7345CD}.wem		\Actor-Mixer Hierarchy\Default Work Unit\IsKilled		759656
+	245167605	KillingObject_Poison	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\FE\{FE5618CD-E1DA-1333-655B-F8D28B9A840F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\KillingObject\KillingObject_Poison		4304272
+	264963240	KillingObject_Arrow	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\B1\{B1D9ADC1-5697-1B06-C6D5-EFBA5183BF72}.wem		\Actor-Mixer Hierarchy\Default Work Unit\KillingObject\KillingObject_Arrow		253284
+	295306259	IsKilledBy_Spike	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\96\{96B34557-F024-A15C-9ECF-30F7C658D883}.wem		\Actor-Mixer Hierarchy\Default Work Unit\IsKilledBy\IsKilledBy_Spike		126688
+	322950644	IsKilledBy_Fall	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\19\{198CCA33-B520-FEE6-9ADC-976E0A86E0D5}.wem		\Actor-Mixer Hierarchy\Default Work Unit\IsKilledBy\IsKilledBy_Fall		698468
+	407112751	PlayerState_Gravity	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\4C\{4C54EFD9-D46A-7CE5-58F0-1B4089A48351}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerState\PlayerState_Gravity		4051084
+	594596475	IsKilledBy_Arrow	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\31\{31BF0CD8-FFF8-D5A7-1401-C7B0AE2EE5DD}.wem		\Actor-Mixer Hierarchy\Default Work Unit\IsKilledBy\IsKilledBy_Arrow		253284
+	670059735	PlayerState_Arrow	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\80\{804DE2CF-DC03-3014-8F4B-0E8E54805E67}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerState\PlayerState_Arrow		1266032
+	735792565	IsKilledBy_Water	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\D5\{D528A846-365B-9E82-3CC5-38FA5EC28545}.wem		\Actor-Mixer Hierarchy\Default Work Unit\IsKilledBy\IsKilledBy_Water		253284
+	737506337	PlayerState_Spike	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\D7\{D7792E10-6706-D802-BF9D-340951717A4D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerState\PlayerState_Spike		2278776
+	871730715	KillingObject_LightningStorm	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\BC\{BCF2C27F-AAFA-2589-6CB4-4C35E118745B}.wem		\Actor-Mixer Hierarchy\Default Work Unit\KillingObject\KillingObject_LightningStorm		2025592
+	886436606	KillingObject_Fire	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\C9\{C9E81E54-3C78-C2E5-AB07-FD57CF2FA2E3}.wem		\Actor-Mixer Hierarchy\Default Work Unit\KillingObject\KillingObject_Fire		2723964
+	921927534	IsKilledBy_Stomp	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\14\{14A2C946-F114-F8CD-5DE4-18BC889B2A0E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\IsKilledBy\IsKilledBy_Stomp		633064
+	1024707097	IsKilled	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\4F\{4FC607E8-80B5-9409-888C-1A340C7345CD}.wem		\Actor-Mixer Hierarchy\Default Work Unit\IsKilledBy\IsKilled		759656
 
