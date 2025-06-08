@@ -1,4 +1,4 @@
- using UnityEngine;
+using UnityEngine;
 
 public class RagdollEnabler : MonoBehaviour
 {
@@ -8,6 +8,10 @@ public class RagdollEnabler : MonoBehaviour
     private Transform RagdollRoot;
     [SerializeField]
     private bool StartRagdoll = false;
+    
+    [Header("Inspector Controls")]
+    [SerializeField] private bool triggerRagdoll = false;
+    
     // Only public for Ragdoll Runtime GUI for explosive force
     public Rigidbody[] Rigidbodies;
     private CharacterJoint[] Joints;
@@ -29,6 +33,7 @@ public class RagdollEnabler : MonoBehaviour
         }
     }
 
+    [ContextMenu("Enable Ragdoll")]
     public void EnableRagdoll()
     {
         Animator.enabled = false;
@@ -48,6 +53,7 @@ public class RagdollEnabler : MonoBehaviour
         }
     }
 
+    [ContextMenu("Enable Animator")]
     public void EnableAnimator()
     {
         Animator.enabled = true;
@@ -63,6 +69,16 @@ public class RagdollEnabler : MonoBehaviour
         {
             rigidbody.detectCollisions = false;
             rigidbody.useGravity = false;
+        }
+    }
+    
+    // Update method to check for inspector trigger
+    private void Update()
+    {
+        if (triggerRagdoll)
+        {
+            triggerRagdoll = false;
+            EnableRagdoll();
         }
     }
 }
