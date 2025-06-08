@@ -14,6 +14,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Jam_Evolution" ID="{79C44D13-9909-4CF5-BDB1-4DA772AEBA84}">
+					<ChildrenList>
+						<Action Name="" ID="{C45703C8-60E9-42D1-BA3E-548857EC4E9D}" ShortID="654775349">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Jam_Evolution" ID="{923BAAE2-429E-4992-BEC0-68B4A4EBB0DB}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
