@@ -13,8 +13,10 @@ public class PlayerState : MonoBehaviour
     private bool movementIsArrow = false;
     [SerializeField] private PlayerMovementTutorial playerMovementScript;
     [SerializeField] private PlayerArrowMovement arrowMovementScript;
-    
-    
+
+    [SerializeField] private float invincibilityDuration = 2f;
+    public bool isInvincible = false;
+
 
 
 
@@ -79,11 +81,19 @@ public class PlayerState : MonoBehaviour
     // Modifie ta m�thode OnPlayerKilled pour appeler HandlePoisonEffect apr�s changement d'�tat
     private void OnPlayerKilled(KillingObjectType type)
     {
+
+        if (isInvincible) return; // Ignore si déjà invincible
+
         if (playerState == KillingObjectType.Arrow)
         {
             SwitchMovement();
         }
         playerState = type;
+
+        // Active l'invincibilité
+        StartCoroutine(ActivateInvincibility());
+
+
 
         this.transform.position = SpawnPoint.position;
         HandlePoisonEffect();
@@ -91,6 +101,14 @@ public class PlayerState : MonoBehaviour
 
 
     }
+
+    private IEnumerator ActivateInvincibility()
+    {
+        isInvincible = true;
+        yield return new WaitForSeconds(invincibilityDuration);
+        isInvincible = false;
+    }
+
 
     public void SwitchMovement()
     {

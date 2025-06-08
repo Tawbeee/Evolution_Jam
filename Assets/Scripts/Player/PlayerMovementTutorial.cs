@@ -110,7 +110,7 @@ public class PlayerMovementTutorial : MonoBehaviour
                 float fallDistance = lastGroundY - transform.position.y;
                 if (fallDistance > maxFallHeight)
                 {
-                    PlayerEvents.Kill(KillingObjectType.Fall);
+                    PlayerEvents.Kill(KillingObjectType.Gravity);
                 }
             }
 

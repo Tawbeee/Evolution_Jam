@@ -7,6 +7,9 @@ public class KillingObject : MonoBehaviour
     [SerializeField] public KillingObjectType killingObjectType;
      protected Collider objectCollider;
 
+
+
+
     public virtual void Start()
     {
         objectCollider = GetComponent<Collider>();
@@ -17,17 +20,16 @@ public class KillingObject : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            if(PlayerState.Instance.playerState != killingObjectType)
+
+            if (PlayerState.Instance.isInvincible) return;
+
+            if (PlayerState.Instance.playerState != killingObjectType)
             {
                 PlayerEvents.Kill(killingObjectType);
 
             }
-                      
         }
     }
-
-
-    
 }
 
 
@@ -38,7 +40,7 @@ public enum KillingObjectType
     Spike,
     Fire,
     Water,
-    Fall,
+    Gravity,
     Poison,
     Arrow,
     Electricity,
