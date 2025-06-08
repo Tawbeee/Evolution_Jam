@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b01f7b5074390d4bb946154aa697a0b, type: 3}
+  m_Name: 6E0BAAED-B1B4-4956-91CB-C57478DAA9DA
+  m_EditorClassIdentifier: 
+  objectName: Play_PlayerState_Lightning_ActivateButton
+  id: 1856267421
+  guid: 6E0BAAED-B1B4-4956-91CB-C57478DAA9DA
+  IsInUserDefinedSoundBank: 1

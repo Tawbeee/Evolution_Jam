@@ -6,6 +6,7 @@ using System.Collections;
 public class Electricity : KillingObject
 {
     [SerializeField] private GameObject thunder;
+    public AK.Wwise.Event IsKilledByLightning;
 
     public override void OnTriggerEnter(Collider other)
     {
@@ -23,14 +24,16 @@ public class Electricity : KillingObject
         
 
         // Attendre 0.2 seconde
-        yield return new WaitForSeconds(0f);
+        yield return new WaitForSeconds(0.2f);
 
         // V�rifie l'�tat du joueur
         if (other.CompareTag("Player"))
         {
             if (PlayerState.Instance.playerState != killingObjectType)
             {
+                IsKilledByLightning.Post(gameObject);
                 PlayerEvents.Kill(killingObjectType);
+                
             }
         }
     }

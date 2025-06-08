@@ -18,7 +18,49 @@ public class PlayerState : MonoBehaviour
     public bool isInvincible = false;
 
 
+    // Wwise Game State switching
+    private void SwitchWwiseGameState()
+    {
+        string gameStateName = "PlayerState";
+        string stateValue;
 
+        switch (playerState)
+        {
+            case KillingObjectType.None:
+                stateValue = "Nothing";
+                break;
+            case KillingObjectType.Spike:
+                stateValue = "Spike";
+                break;
+            case KillingObjectType.Fire:
+                stateValue = "Fire";
+                break;
+            case KillingObjectType.Water:
+                stateValue = "Water";
+                break;
+            case KillingObjectType.Gravity:
+                stateValue = "Fall";
+                break;
+            case KillingObjectType.Poison:
+                stateValue = "Poison";
+                break;
+            case KillingObjectType.Arrow:
+                stateValue = "Arrow";
+                break;
+            case KillingObjectType.Electricity:
+                stateValue = "Lightning";
+                break;
+            case KillingObjectType.Stomp:
+                stateValue = "Stomp";
+                break;
+            default:
+                stateValue = "Nothing"; // Fallback to normal state
+                break;
+        }
+
+        AkUnitySoundEngine.SetState(gameStateName, stateValue);
+        Debug.Log($"Wwise Game State set to: {gameStateName} - {stateValue}");
+    }
 
     void Awake()
     {
@@ -30,6 +72,7 @@ public class PlayerState : MonoBehaviour
     {
         playerState = startState;
         
+        SwitchWwiseGameState();
     }
 
     private void OnEnable()
@@ -107,7 +150,8 @@ public class PlayerState : MonoBehaviour
         HandlePoisonEffect();
         HandleStompEffect();
 
-
+        // Switch Wwise Game State
+        SwitchWwiseGameState();
     }
 
     private IEnumerator ActivateInvincibility()

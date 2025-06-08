@@ -5,6 +5,8 @@ public class DestructibleObject : MonoBehaviour
     private Collider objectCollider;
     [SerializeField] private KillingObjectType killedBy;
 
+    public AK.Wwise.Event DestructedSound;
+
     private void Start()
     {
         objectCollider = GetComponent<Collider>();

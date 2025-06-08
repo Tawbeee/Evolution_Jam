@@ -7,6 +7,8 @@ public class KillingObject : MonoBehaviour
     [SerializeField] public KillingObjectType killingObjectType;
      protected Collider objectCollider;
 
+     public AK.Wwise.Event KilledSound;
+     public AK.Wwise.Event DeathSound;
 
 
 
@@ -26,6 +28,9 @@ public class KillingObject : MonoBehaviour
             if (PlayerState.Instance.playerState != killingObjectType)
             {
                 PlayerEvents.Kill(killingObjectType);
+                KilledSound.Post(gameObject);
+               if(DeathSound != null) DeathSound.Post(gameObject);
+
 
             }
         }

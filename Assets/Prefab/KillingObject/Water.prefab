@@ -156,6 +156,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   killingObjectType: 3
+  KilledSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ae808c11e001cb54592e39645958fce9, type: 2}
+  DeathSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1001 &5218521177801905168
 PrefabInstance:
   m_ObjectHideFlags: 0
