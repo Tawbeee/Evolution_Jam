@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 9e6dca6caeff504fb50ce8ff6831ce2a
     GuidInternal: 
-    m_lastTime: -8584522736855287813
+    m_lastTime: -8584522355786475259
     List:
     - name: Main
       guid: 9ae77d31500b6f4d8cbaa033d1654bd5
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: a5f208ba67df294e9b47f79396bb1985
     GuidInternal: 
-    m_lastTime: -8584522736855277815
+    m_lastTime: -8584522355786485257
     List:
     - name: Play_Jam_Evolution
       guid: 134dc4790999f54cbdb14da772aeba84
@@ -128,6 +128,23 @@ MonoBehaviour:
         guid: fa58d50cca29f94e88a2c7a94b46e3f9
       Path: Events\Default Work Unit\Play_KillingObject_Fire
       maxAttenuation: 35
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_KillingObject_Fire
+      guid: 89c69ec752b7954ba32dfed8eb860414
+      id: 2085787364
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a5f208ba67df294e9b47f79396bb1985
+      - ElementName: Stop_KillingObject_Fire
+        ObjectType: 3
+        guid: 89c69ec752b7954ba32dfed8eb860414
+      Path: Events\Default Work Unit\Stop_KillingObject_Fire
+      maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
   RtpcWwu:
