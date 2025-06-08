@@ -224,6 +224,48 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Stop_KillingObject_Arrow" ID="{8FE73E9B-C7E3-4CE5-A0E0-4FDCB66C57AC}">
+					<ChildrenList>
+						<Action Name="" ID="{11F9814F-1B27-4C5B-80C8-0890E45D772F}" ShortID="918077776">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="KillingObject_Arrow" ID="{AA2CB527-BD6E-48CF-A401-4E54C5E126EF}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_KillingObject_LightningStorm" ID="{EFAD6DE1-DD05-4FD0-91A9-932E7ED09059}">
+					<ChildrenList>
+						<Action Name="" ID="{775E09C5-7863-4367-A793-E6BCB6FFDBD5}" ShortID="378989128">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="KillingObject_LightningStorm" ID="{EB313667-CCFF-47F1-ACDF-55B0B490EB49}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_KillingObject_Poison" ID="{3D614DD5-70F7-4B87-B59F-315F8C5097EF}">
+					<ChildrenList>
+						<Action Name="" ID="{9C3E6F08-8C43-46AB-BD2A-12E4FE30D5A4}" ShortID="171062742">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="KillingObject_Poison" ID="{B8C77C31-A6DF-448E-B394-4787CC4D8BF5}" WorkUnitID="{9E86C382-D2FE-4B50-8238-9FF195AFA09C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
