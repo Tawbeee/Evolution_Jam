@@ -1,8 +1,9 @@
 Event	ID	Name			Wwise Object Path	Notes
+	2085787364	Stop_KillingObject_Fire			\Default Work Unit\Stop_KillingObject_Fire	
 	3075399896	Play_Jam_Evolution			\Default Work Unit\Play_Jam_Evolution	
 	3990733286	Play_KillingObject_Fire			\Default Work Unit\Play_KillingObject_Fire	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	243561499	Jam_Evolution	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\B6\{B660EDAC-5576-6BA8-CB9D-CF8C30E4C6C7}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jam_Evolution		32408008
+	243561499	Jam_Evolution	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\40\{40220D61-7176-DD19-39DE-F5D7FBFF0758}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jam_Evolution		32408008
 	886436606	KillingObject_Fire	D:\Projects\Unity\Evolution_JAMM\Evolution_JAMM_WwiseProject\.cache\C9\{C9E81E54-3C78-C2E5-AB07-FD57CF2FA2E3}.wem		\Actor-Mixer Hierarchy\Default Work Unit\KillingObject_Fire		2723964
 

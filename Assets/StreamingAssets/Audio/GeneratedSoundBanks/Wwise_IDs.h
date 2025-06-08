@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID PLAY_JAM_EVOLUTION = 3075399896U;
         static const AkUniqueID PLAY_KILLINGOBJECT_FIRE = 3990733286U;
+        static const AkUniqueID STOP_KILLINGOBJECT_FIRE = 2085787364U;
     } // namespace EVENTS
 
     namespace BANKS

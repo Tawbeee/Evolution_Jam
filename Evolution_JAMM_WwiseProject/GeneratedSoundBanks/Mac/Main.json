@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{317DE79A-0B50-4D6F-8CBA-A033D1654BD5}",
     "Language": "SFX",
-    "Hash": "{78D7649F-3E17-EB2D-E1C7-3525DFC5F77B}",
+    "Hash": "{A9F88EE5-FA30-5952-6A6C-240ADE805B24}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -21,7 +21,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Jam_Evolution.wav",
-      "CachePath": "B6/{B660EDAC-5576-6BA8-CB9D-CF8C30E4C6C7}.wem"
+      "CachePath": "40/{40220D61-7176-DD19-39DE-F5D7FBFF0758}.wem"
      },
      {
       "Id": "886436606",
@@ -57,10 +57,20 @@
         "Id": "886436606"
        }
       ]
+     },
+     {
+      "Id": "2085787364",
+      "Name": "Stop_KillingObject_Fire",
+      "ObjectPath": "\\Events\\Default Work Unit\\Stop_KillingObject_Fire",
+      "GUID": "{C79EC689-B752-4B95-A32D-FED8EB860414}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
      }
     ]
    }
   ],
-  "FileHash": "{528DB476-8EE6-CE2A-0477-8569192F09B1}"
+  "FileHash": "{C8F7ABF7-2DD0-8EC1-835B-859254D00A71}"
  }
 }
