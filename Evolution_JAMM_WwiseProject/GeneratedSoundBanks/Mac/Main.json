@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{317DE79A-0B50-4D6F-8CBA-A033D1654BD5}",
     "Language": "SFX",
-    "Hash": "{C44C6C69-F9C5-8B7B-0CA6-7E5DB4A942A7}",
+    "Hash": "{FDDA24FB-B767-1824-2310-F5DA7DAC7394}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -93,7 +93,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "KillingObject_Poison.wav",
-      "CachePath": "FE/{FE5618CD-E1DA-1333-655B-F8D28B9A840F}.wem"
+      "CachePath": "11/{11290685-E6EF-EE07-D8A6-B36BB13BF8F0}.wem"
      },
      {
       "Id": "264963240",
@@ -101,7 +101,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "KillingObject_Arrow.wav",
-      "CachePath": "B1/{B1D9ADC1-5697-1B06-C6D5-EFBA5183BF72}.wem"
+      "CachePath": "71/{71803EC6-C974-C109-3AB8-EF296D1FEF29}.wem"
      },
      {
       "Id": "295306259",
@@ -189,7 +189,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "KillingObject_LightningStorm.wav",
-      "CachePath": "BC/{BCF2C27F-AAFA-2589-6CB4-4C35E118745B}.wem"
+      "CachePath": "8D/{8DA1E07B-4377-51ED-933F-DF91BC914779}.wem"
      },
      {
       "Id": "886436606",
@@ -332,9 +332,8 @@
       "Name": "Play_KillingObject_Arrow",
       "ObjectPath": "\\Events\\Default Work Unit\\KillingObject\\Play_KillingObject_Arrow",
       "GUID": "{5DD70ED2-24EA-4EBC-9A93-9D754AE71F4F}",
-      "DurationType": "OneShot",
-      "DurationMin": "1.3186876",
-      "DurationMax": "1.3186876",
+      "MaxAttenuation": "35",
+      "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "264963240"
@@ -359,9 +358,8 @@
       "Name": "Play_KillingObject_LightningStorm",
       "ObjectPath": "\\Events\\Default Work Unit\\KillingObject\\Play_KillingObject_LightningStorm",
       "GUID": "{734DF9B6-1EC0-4877-B521-7D3290D78568}",
-      "DurationType": "OneShot",
-      "DurationMin": "10.5494585",
-      "DurationMax": "10.5494585",
+      "MaxAttenuation": "35",
+      "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "871730715"
@@ -373,9 +371,8 @@
       "Name": "Play_KillingObject_Poison",
       "ObjectPath": "\\Events\\Default Work Unit\\KillingObject\\Play_KillingObject_Poison",
       "GUID": "{6B59C139-F4F0-4F3F-A229-CB6F547B792D}",
-      "DurationType": "OneShot",
-      "DurationMin": "22.417583",
-      "DurationMax": "22.417583",
+      "MaxAttenuation": "35",
+      "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "245167605"
@@ -506,6 +503,6 @@
     ]
    }
   ],
-  "FileHash": "{5DC70229-AFE7-BF4E-68DF-150EF5474D37}"
+  "FileHash": "{A03DB36A-B041-F838-381A-2C5D1C964BCE}"
  }
 }
