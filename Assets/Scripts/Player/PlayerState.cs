@@ -7,12 +7,16 @@ public class PlayerState : MonoBehaviour
     [SerializeField] private Transform SpawnPoint;
     [SerializeField] public KillingObjectType playerState;
     [SerializeField] private KillingObjectType startState;
+    [SerializeField] private GameObject astronaut;
+    [SerializeField] private CapsuleCollider astronautCollider;
 
     private bool movementIsArrow = false;
     [SerializeField] private PlayerMovementTutorial playerMovementScript;
     [SerializeField] private PlayerArrowMovement arrowMovementScript;
+    
+    
 
-  
+
 
     void Awake()
     {
@@ -82,6 +86,7 @@ public class PlayerState : MonoBehaviour
 
         this.transform.position = SpawnPoint.position;
         HandlePoisonEffect();
+        HandleStompEffect();
 
 
     }
@@ -101,7 +106,28 @@ public class PlayerState : MonoBehaviour
             playerMovementScript.enabled = !movementIsArrow;
     }
 
-    
+
+    private void HandleStompEffect()
+    {
+        bool isStomp = (playerState == KillingObjectType.Stomp);
+
+        // Vitesse
+        
+
+        // Taille de l'apparence (astronaute)
+        astronaut.transform.localScale = isStomp
+            ? new Vector3(1f, 0.4f, 1f)  // garde une taille visible
+            : new Vector3(1f, 1f, 1f);
+
+        // Ajuste le CharacterController (évite qu’il flotte ou colle au sol)
+        if (astronautCollider != null)
+        {
+            astronautCollider.height = isStomp ? 1f : 2f;
+            astronautCollider.center = isStomp ? new Vector3(0f, -0.5f, 0f) : new Vector3(0f, 0f, 0f);
+        }
+    }
+
+
 
 
 

@@ -26,17 +26,7 @@ public class StompKillingObject : KillingObject
         Invoke(nameof(ResetStomp), resetDelay);
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (hasStomped) return;
-
-
-        // Gère le kill aussi via la collision (en plus du trigger)
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            PlayerEvents.Kill(killingObjectType);
-        }
-    }
+    
 
     private void ResetStomp()
     {
@@ -64,8 +54,5 @@ public class StompKillingObject : KillingObject
     
 
     // Si tu veux aussi garder le comportement trigger pour tuer au contact :
-    public override void OnTriggerEnter(Collider other)
-    {
-        base.OnTriggerEnter(other);
-    }
+    
 }

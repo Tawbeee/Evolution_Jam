@@ -5,7 +5,7 @@ using UnityEngine;
 public class KillingObject : MonoBehaviour
 {
     [SerializeField] public KillingObjectType killingObjectType;
-    protected Collider objectCollider;
+     protected Collider objectCollider;
 
     public virtual void Start()
     {
