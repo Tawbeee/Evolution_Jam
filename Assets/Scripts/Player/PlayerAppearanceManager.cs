@@ -38,7 +38,14 @@ public class PlayerAppearanceManager : MonoBehaviour
             PlayerArrowMovement arrowMovement = GetComponent<PlayerArrowMovement>();
             if (arrowMovement != null)
                 arrowMovement.enabled = true;
-                
+            if (fxSpawnPoint != null)
+            {
+                foreach (Transform child in fxSpawnPoint)
+                {
+                    Destroy(child.gameObject);
+                }
+            }
+
             return;
         }
         

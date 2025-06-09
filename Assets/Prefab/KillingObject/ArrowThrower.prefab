@@ -29,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 1978166679752953446}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31.388145, y: -0.9199848, z: -3.5040674}
-  m_LocalScale: {x: 2.8031, y: 6.871182, z: 2.8031}
+  m_LocalPosition: {x: 31.388145, y: 0.3105, z: -3.5040674}
+  m_LocalScale: {x: 2.8031, y: 3.3789036, z: 2.8031}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6882939009675318897}
@@ -125,11 +125,7 @@ MonoBehaviour:
   arrowPrefab: {fileID: 3999871520251377547, guid: 74b5194c909310e4b92d2a1ff3c1b2f5, type: 3}
   fireRate: 1
   arrowForce: 0.1
-  shootAngle: 0
-  angleX: 0
-  angleY: 0
-  angleZ: 0
-  Spawn: {fileID: 6882939009675318897}
+  spawn: {fileID: 6882939009675318897}
 --- !u!1 &2966137525595982372
 GameObject:
   m_ObjectHideFlags: 0

@@ -35,11 +35,12 @@ public class DeathScreenManager : MonoBehaviour
     }
 
     private void HandlePlayerKilled(KillingObjectType killingObject)
-    {
+    {   
+        Debug.Log("ÉVÉNEMENT DE MORT REÇU ! Affichage de l'écran.");
         // Empêche l'affichage multiple
         if (isShowing) return;
 
-        Debug.Log("ÉVÉNEMENT DE MORT REÇU ! Affichage de l'écran.");
+        
 
         if (deathScreenPanel == null || panelAnimator == null || secondaryText == null)
         {
@@ -48,7 +49,7 @@ public class DeathScreenManager : MonoBehaviour
         }
 
         string enemyName = killingObject.ToString();
-        secondaryText.text = "But you got the " + enemyName;
+        secondaryText.text = "You got Killed but ...\n you got the " + enemyName;
 
         // Active le panel et démarre la désactivation
         deathScreenPanel.SetActive(true);

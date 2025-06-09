@@ -10,24 +10,23 @@ public class Arrow : KillingObject
             {
                 PlayerEvents.Kill(killingObjectType);
                 PlayerState.Instance.SwitchMovement();
-
+            }
         }
-        }
-
     }
 
-    public Vector2 direction = Vector2.right; // Défini par ArrowThrower
+    public Vector3 direction = Vector3.right; // Défini par ArrowThrower
     public float speed = 10f;
 
     void Update()
     {
-        transform.Translate(direction.normalized * speed * Time.deltaTime);
-        transform.rotation = Quaternion.Euler(0f, 0f, 90f);
+        transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
 
     void Start()
     {
-        Destroy(gameObject, 10f); // détruit l'objet après 10 secondes
-    }
+        // Oriente vers la direction souhaitée
+        transform.rotation = Quaternion.LookRotation(direction);
 
+        Destroy(gameObject, 5f);
+    }
 }

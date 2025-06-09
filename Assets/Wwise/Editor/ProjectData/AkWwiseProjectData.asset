@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 14580c33a2342243805c3a6f60d8d6f6
     GuidInternal: 
-    m_lastTime: -8584523604945332933
+    m_lastTime: -8584521874863564727
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 05bb4dea1ed1e2468ed0d14b78566ef4
     GuidInternal: 
-    m_lastTime: -8584523604945332933
+    m_lastTime: -8584521874871490910
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 9e6dca6caeff504fb50ce8ff6831ce2a
     GuidInternal: 
-    m_lastTime: -8584522195880933346
+    m_lastTime: -8584521874863589225
     List:
     - name: Main
       guid: 9ae77d31500b6f4d8cbaa033d1654bd5
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: a5f208ba67df294e9b47f79396bb1985
     GuidInternal: 
-    m_lastTime: -8584522195893488059
+    m_lastTime: -8584521874881116291
     List:
     - name: IsKilled
       guid: 69ef32b88e156946a7a28d59be0e2dc2
@@ -148,8 +148,8 @@ MonoBehaviour:
         guid: bf4c5151ae0567469ffe3e0a82983f96
       Path: Events\Default Work Unit\IsKilled\Play_IsKilled
       maxAttenuation: 0
-      maxDuration: 3.9560416
-      minDuration: 3.9560416
+      maxDuration: -1
+      minDuration: -1
     - name: Play_IsKilledBy_Arrow
       guid: 312ff4afbcf15140b0eb40ae6770258f
       id: 2095147940
@@ -168,8 +168,8 @@ MonoBehaviour:
         guid: 312ff4afbcf15140b0eb40ae6770258f
       Path: Events\Default Work Unit\IsKilled\Play_IsKilledBy_Arrow
       maxAttenuation: 0
-      maxDuration: 1.3186876
-      minDuration: 1.3186876
+      maxDuration: -1
+      minDuration: -1
     - name: Play_IsKilledBy_Fall
       guid: 896abd35efb9ab42b0d0d15b66beb23f
       id: 3446595322
@@ -188,8 +188,8 @@ MonoBehaviour:
         guid: 896abd35efb9ab42b0d0d15b66beb23f
       Path: Events\Default Work Unit\IsKilled\Play_IsKilledBy_Fall
       maxAttenuation: 0
-      maxDuration: 3.6373541
-      minDuration: 3.6373541
+      maxDuration: -1
+      minDuration: -1
     - name: Play_IsKilledBy_Lightning
       guid: 73660d273215cf479f150ffb4f2969d6
       id: 1734114553
@@ -208,8 +208,8 @@ MonoBehaviour:
         guid: 73660d273215cf479f150ffb4f2969d6
       Path: Events\Default Work Unit\IsKilled\Play_IsKilledBy_Lightning
       maxAttenuation: 0
-      maxDuration: 1.4011042
-      minDuration: 1.4011042
+      maxDuration: -1
+      minDuration: -1
     - name: Play_IsKilledBy_Spike
       guid: 173d9b03ddf15448940515258f2ab701
       id: 201740281
@@ -228,8 +228,8 @@ MonoBehaviour:
         guid: 173d9b03ddf15448940515258f2ab701
       Path: Events\Default Work Unit\IsKilled\Play_IsKilledBy_Spike
       maxAttenuation: 0
-      maxDuration: 0.65933335
-      minDuration: 0.65933335
+      maxDuration: -1
+      minDuration: -1
     - name: Play_IsKilledBy_Stomp
       guid: f231dbe6e51bfd4fb24e07c9f1d312f3
       id: 1365561248
@@ -248,8 +248,8 @@ MonoBehaviour:
         guid: f231dbe6e51bfd4fb24e07c9f1d312f3
       Path: Events\Default Work Unit\IsKilled\Play_IsKilledBy_Stomp
       maxAttenuation: 0
-      maxDuration: 3.2967083
-      minDuration: 3.2967083
+      maxDuration: -1
+      minDuration: -1
     - name: Play_IsKilledBy_Water
       guid: 59759305bd3b8141849ac79935000fe7
       id: 3013923882
@@ -268,8 +268,8 @@ MonoBehaviour:
         guid: 59759305bd3b8141849ac79935000fe7
       Path: Events\Default Work Unit\IsKilled\Play_IsKilledBy_Water
       maxAttenuation: 0
-      maxDuration: 1.3186876
-      minDuration: 1.3186876
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Jam_Evolution
       guid: 134dc4790999f54cbdb14da772aeba84
       id: 3075399896
@@ -285,8 +285,8 @@ MonoBehaviour:
         guid: 134dc4790999f54cbdb14da772aeba84
       Path: Events\Default Work Unit\Play_Jam_Evolution
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_KillingObject_Arrow
       guid: d20ed75dea24bc4e9a939d754ae71f4f
       id: 2608619777
@@ -304,9 +304,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: d20ed75dea24bc4e9a939d754ae71f4f
       Path: Events\Default Work Unit\KillingObject\Play_KillingObject_Arrow
-      maxAttenuation: 35
-      maxDuration: 0
-      minDuration: 0
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_KillingObject_Fire
       guid: fa58d50cca29f94e88a2c7a94b46e3f9
       id: 3990733286
@@ -324,9 +324,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: fa58d50cca29f94e88a2c7a94b46e3f9
       Path: Events\Default Work Unit\KillingObject\Play_KillingObject_Fire
-      maxAttenuation: 35
-      maxDuration: 0
-      minDuration: 0
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_KillingObject_LightningStorm
       guid: b6f94d73c01e7748b5217d3290d78568
       id: 1457347807
@@ -344,9 +344,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: b6f94d73c01e7748b5217d3290d78568
       Path: Events\Default Work Unit\KillingObject\Play_KillingObject_LightningStorm
-      maxAttenuation: 35
-      maxDuration: 0
-      minDuration: 0
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_KillingObject_Poison
       guid: 39c1596bf0f43f4fa229cb6f547b792d
       id: 3516034874
@@ -364,9 +364,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 39c1596bf0f43f4fa229cb6f547b792d
       Path: Events\Default Work Unit\KillingObject\Play_KillingObject_Poison
-      maxAttenuation: 35
-      maxDuration: 0
-      minDuration: 0
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_PlayerState
       guid: e777e1cd1402cd4f9af925fb19ff0323
       id: 1513779728
@@ -385,8 +385,8 @@ MonoBehaviour:
         guid: e777e1cd1402cd4f9af925fb19ff0323
       Path: Events\Default Work Unit\PlayerState\Play_PlayerState
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_PlayerState_Lightning_ActivateButton
       guid: edaa0b6eb4b1564991cbc57478daa9da
       id: 1856267421
@@ -402,8 +402,8 @@ MonoBehaviour:
         guid: edaa0b6eb4b1564991cbc57478daa9da
       Path: Events\Default Work Unit\Play_PlayerState_Lightning_ActivateButton
       maxAttenuation: 0
-      maxDuration: 1.0714375
-      minDuration: 1.0714375
+      maxDuration: -1
+      minDuration: -1
     - name: Play_PlayerState_Spike_Destroy
       guid: 621ac98114755e4d8a02d2622d3090b2
       id: 1795633096
@@ -419,8 +419,8 @@ MonoBehaviour:
         guid: 621ac98114755e4d8a02d2622d3090b2
       Path: Events\Default Work Unit\Play_PlayerState_Spike_Destroy
       maxAttenuation: 0
-      maxDuration: 1.6483542
-      minDuration: 1.6483542
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Random_Foosteps
       guid: e2ce8dbf3c743d4cbcaa1a7a1e8e791b
       id: 1374893771
@@ -436,8 +436,8 @@ MonoBehaviour:
         guid: e2ce8dbf3c743d4cbcaa1a7a1e8e791b
       Path: Events\Default Work Unit\Play_Random_Foosteps
       maxAttenuation: 0
-      maxDuration: 0.93243814
-      minDuration: 0.46621907
+      maxDuration: -1
+      minDuration: -1
     - name: PlayerState
       guid: bbd227c464a48f4991835df492a154cc
       id: 3285234865
@@ -473,8 +473,8 @@ MonoBehaviour:
         guid: 9b3ee78fe3c7e54ca0e04fdcb66c57ac
       Path: Events\Default Work Unit\KillingObject\Stop_KillingObject_Arrow
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Stop_KillingObject_Fire
       guid: 89c69ec752b7954ba32dfed8eb860414
       id: 2085787364
@@ -493,8 +493,8 @@ MonoBehaviour:
         guid: 89c69ec752b7954ba32dfed8eb860414
       Path: Events\Default Work Unit\KillingObject\Stop_KillingObject_Fire
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Stop_KillingObject_LightningStorm
       guid: e16dadef05ddd04f91a9932e7ed09059
       id: 1769917345
@@ -513,8 +513,8 @@ MonoBehaviour:
         guid: e16dadef05ddd04f91a9932e7ed09059
       Path: Events\Default Work Unit\KillingObject\Stop_KillingObject_LightningStorm
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Stop_KillingObject_Poison
       guid: d54d613df770874bb59f315f8c5097ef
       id: 3063937136
@@ -533,8 +533,8 @@ MonoBehaviour:
         guid: d54d613df770874bb59f315f8c5097ef
       Path: Events\Default Work Unit\KillingObject\Stop_KillingObject_Poison
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -547,7 +547,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 356651c08d9348478fa307137c8a7008
     GuidInternal: 
-    m_lastTime: -8584523604945332933
+    m_lastTime: -8584521874881111247
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -561,7 +561,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 996b37a5f5757c458ff8881d871265b4
     GuidInternal: 
-    m_lastTime: -8584522195880921605
+    m_lastTime: -8584521874863589225
     List:
     - name: PlayerState
       guid: dab77a0014cc674ea54d7e5a09ba968d
@@ -753,7 +753,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: beba23cd37fc08478e1138bb0c7304c0
     GuidInternal: 
-    m_lastTime: -8584523604945332933
+    m_lastTime: -8584521874863574793
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -767,7 +767,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 27eb967349200b419470b670b581235d
     GuidInternal: 
-    m_lastTime: -8584523604945332933
+    m_lastTime: -8584521874863574793
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 05000000060000000700000008000000090000000d0000000f00000010000000

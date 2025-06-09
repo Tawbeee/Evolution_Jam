@@ -28,6 +28,7 @@ public class PlayerInteraction : MonoBehaviour
                 // Load the next level or show a victory message
                 Debug.Log("All coins collected! Level complete!");
                 // You can add your level completion logic here, like loading a new scene.
+                GameManager.Instance.End(); // Assuming EndGame handles level completion
             }
         }
     }
