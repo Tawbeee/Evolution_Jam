@@ -5,7 +5,7 @@ public class PlayerState : MonoBehaviour
 {
     public static PlayerState Instance { get; private set; }
 
-    [SerializeField] private Transform SpawnPoint;
+    [SerializeField] public Transform SpawnPoint;
     [SerializeField] public KillingObjectType playerState;
     [SerializeField] private KillingObjectType startState;
     [SerializeField] private GameObject astronaut;

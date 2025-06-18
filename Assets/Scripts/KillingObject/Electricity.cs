@@ -14,7 +14,8 @@ public class Electricity : KillingObject
     }
 
     private IEnumerator HandleThunderAndKill(Collider other)
-    {
+    {   
+        PlayerState.Instance.transform.position = PlayerState.Instance.SpawnPoint.position;
         if (PlayerState.Instance.playerState != killingObjectType)
         {
             thunder.SetActive(false);
@@ -30,10 +31,12 @@ public class Electricity : KillingObject
         if (other.CompareTag("Player"))
         {
             if (PlayerState.Instance.playerState != killingObjectType)
-            {
+            {   
+                
                 IsKilledByLightning.Post(gameObject);
                 PlayerEvents.Kill(killingObjectType);
                 
+
             }
         }
     }

@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour
             {
                 RestartGame();
             }
-            else if (Input.GetKeyDown(KeyCode.Q))
+            else if (Input.GetKeyDown(KeyCode.C))
             {
                 QuitGame();
             }
@@ -109,7 +109,7 @@ public class GameManager : MonoBehaviour
         isPaused = false;
 
         player.transform.position = spawnPosition.position;
-        PlayerState.Instance.playerState = KillingObjectType.None;
+        
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
